@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "gCFh0E9sXJpwKvgdLxDncXUwYEFx7waWxAUj5BAS81U=",
+  "Source": "TurkeyCities.API",
+  "BasePath": "_content/TurkeyCities.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,11 @@
+version: "3"
+services:
+  authdb:
+   image: mcr.microsoft.com/mssql/server:2022-latest 
+  auth.api:
+   image: ${DOCKER_REGISTRY-}authdb
+   build: 
+    context: .
+    dockerfile: src/projects/AuthServer/AuthServer.API/Dockerfile
+volumes:
+  auth_volume:  

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "ymjMrBluo4nQBjZDrEfKF0SorL1yRqZosZNv5rD/29w=",
+  "Source": "WebAPI",
+  "BasePath": "_content/WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebAPI\\wwwroot",
+      "Source": "WebAPI",
+      "ContentRoot": "C:\\Users\\kerem\\Desktop\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\kerem\\Desktop\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\WebAPI\\wwwroot\\images\\Facebook_Logo_(2019).png",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kerem\\Desktop\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "images/Facebook_Logo_(2019).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Facebook_Logo_(2019).png"
+    }
+  ]
+}

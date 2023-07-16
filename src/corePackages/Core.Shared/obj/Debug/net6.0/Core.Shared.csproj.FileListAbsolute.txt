@@ -1,0 +1,12 @@
+C:\Users\kerem\Desktop\DigitalBusinessCard\src\corePackages\Core.Shared\bin\Debug\net6.0\Core.Shared.deps.json
+C:\Users\kerem\Desktop\DigitalBusinessCard\src\corePackages\Core.Shared\bin\Debug\net6.0\Core.Shared.dll
+C:\Users\kerem\Desktop\DigitalBusinessCard\src\corePackages\Core.Shared\bin\Debug\net6.0\Core.Shared.pdb
+C:\Users\kerem\Desktop\DigitalBusinessCard\src\corePackages\Core.Shared\obj\Debug\net6.0\Core.Shared.csproj.AssemblyReference.cache
+C:\Users\kerem\Desktop\DigitalBusinessCard\src\corePackages\Core.Shared\obj\Debug\net6.0\Core.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kerem\Desktop\DigitalBusinessCard\src\corePackages\Core.Shared\obj\Debug\net6.0\Core.Shared.AssemblyInfoInputs.cache
+C:\Users\kerem\Desktop\DigitalBusinessCard\src\corePackages\Core.Shared\obj\Debug\net6.0\Core.Shared.AssemblyInfo.cs
+C:\Users\kerem\Desktop\DigitalBusinessCard\src\corePackages\Core.Shared\obj\Debug\net6.0\Core.Shared.csproj.CoreCompileInputs.cache
+C:\Users\kerem\Desktop\DigitalBusinessCard\src\corePackages\Core.Shared\obj\Debug\net6.0\Core.Shared.dll
+C:\Users\kerem\Desktop\DigitalBusinessCard\src\corePackages\Core.Shared\obj\Debug\net6.0\refint\Core.Shared.dll
+C:\Users\kerem\Desktop\DigitalBusinessCard\src\corePackages\Core.Shared\obj\Debug\net6.0\Core.Shared.pdb
+C:\Users\kerem\Desktop\DigitalBusinessCard\src\corePackages\Core.Shared\obj\Debug\net6.0\ref\Core.Shared.dll
