@@ -16,7 +16,7 @@ namespace AuthServer.API.Persistance.Contexts
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(Configuration.GetConnectionString("SQLConnectionString"));
+            optionsBuilder.UseSqlServer(connectionString: Configuration.GetConnectionString("SQLConnectionString"));
         }
     }
 }

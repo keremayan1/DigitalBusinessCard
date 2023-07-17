@@ -1,14 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8E2A1F4HZkdwyf0nMEDky4tIoXZbWf21poSeJU5KwHKCx5FCviAUIsuZzh65jzQOP5YGF9krf8R7RjNwcuTr6g==",
+  "dgSpecHash": "zn9G/2B3yHGcIHIkrus9iRb5Ckefd123X1d3PoYlMmJyPRAdL6sce9w62kUusdSg36aSOjdrAHWw+DLF4nurxQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kerem\\Desktop\\DigitalBusinessCard\\src\\corePackages\\Core.Persistance\\Core.Persistance.csproj",
+  "projectFilePath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Persistance\\Core.Persistance.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kerem\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
-    "C:\\Users\\kerem\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
-    "C:\\Users\\kerem\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.6\\fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512",
-    "C:\\Users\\kerem\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
-    "C:\\Users\\kerem\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\kerem\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\kerem\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.1\\microsoft.entityframeworkcore.6.0.1.nupkg.sha512",
     "C:\\Users\\kerem\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.1\\microsoft.entityframeworkcore.abstractions.6.0.1.nupkg.sha512",

@@ -1,6 +1,8 @@
 ﻿using Application.Features.Games.DTOs;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Constants;
+using Core.Application.Pipelines.Authorization;
 using Domain.Entities.Concrete;
 using MediatR;
 using System;
@@ -11,9 +13,10 @@ using System.Threading.Tasks;
 
 namespace Application.Features.Games.Commands.Delete
 {
-    public class DeleteGameCommand : IRequest<DeletedGameDto>
+    public class DeleteGameCommand : IRequest<DeletedGameDto>, ISecuredRequest
     {
         public int Id { get; set; }
+        public string[] Roles => new[] { Permissions.Admin };
         public class DeleteGameCommandHandler : IRequestHandler<DeleteGameCommand, DeletedGameDto>
         {
             private IGameRepository _gameRepository;

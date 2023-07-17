@@ -1,32 +1,38 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+
+	
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
+    <Compile Remove="Application\Features\Auths\Profiles\**" />
+    <Content Remove="Application\Features\Auths\Profiles\**" />
+    <EmbeddedResource Remove="Application\Features\Auths\Profiles\**" />
+    <None Remove="Application\Features\Auths\Profiles\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+   
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.6" />
+   
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
 	  <PackageReference Include="AutoMapper" Version="11.0.0" />
 	  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
-	  <PackageReference Include="MassTransit" Version="8.0.6" />
 	  <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
-	  <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.6" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.1" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.1" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1" />	  
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\corePackages\Core.Application\Core.Application.csproj" />
     <ProjectReference Include="..\..\..\corePackages\Core.CrossCuttingConcerns\Core.CrossCuttingConcerns.csproj" />
     <ProjectReference Include="..\..\..\corePackages\Core.Security\Core.Security.csproj" />
     <ProjectReference Include="..\..\..\corePackages\Core.Shared\Core.Shared.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Application\Features\Auths\Profiles\" />
   </ItemGroup>
 
 </Project>

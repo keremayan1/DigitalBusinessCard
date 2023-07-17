@@ -1,5 +1,6 @@
 using Application;
 using Core.Persistance.Images.DependencyResolvers;
+using Core.Security;
 using Core.Security.Encryption;
 using Core.Security.JWT;
 using Core.Shared;
@@ -11,6 +12,7 @@ using Persistance;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddSecurityServices();
 builder.Services.AddImageServices();
 builder.Services.AddPersistanceServices();
 builder.Services.AddApplicationService();

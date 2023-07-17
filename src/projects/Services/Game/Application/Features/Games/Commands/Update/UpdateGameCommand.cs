@@ -1,6 +1,8 @@
 ﻿using Application.Features.Games.DTOs;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Constants;
+using Core.Application.Pipelines.Authorization;
 using Domain.Entities.Concrete;
 using MediatR;
 using System;
@@ -11,10 +13,11 @@ using System.Threading.Tasks;
 
 namespace Application.Features.Games.Commands.Update
 {
-    public class UpdateGameCommand : IRequest<UpdatedGameDto>
+    public class UpdateGameCommand : IRequest<UpdatedGameDto>,ISecuredRequest
     {
         public int Id { get; set; }
         public string GameName { get; set; }
+        public string[] Roles => new[] { Permissions.Admin };
         public class UpdateGameCommandHandler : IRequestHandler<UpdateGameCommand, UpdatedGameDto>
         {
             private IGameRepository _gameRepository;

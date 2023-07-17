@@ -1,17 +1,21 @@
 ﻿using Application.Features.SocialMedias.DTOs;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Constants;
+using Core.Application.Pipelines.Authorization;
 using Core.Persistance.Images;
 using Domain.Entities.Concrete;
 using MediatR;
 
 namespace Application.Features.SocialMedias.Commands.Add
 {
-    public class CreateSocialMediaCommand : IRequest<CreatedSocialMediaDto>
+    public class CreateSocialMediaCommand : IRequest<CreatedSocialMediaDto>,ISecuredRequest
     {
        
         public string SocialMediaName { get; set; }
-        
+
+        public string[] Roles => new[] { Permissions.Admin, Permissions.Moderator };
+
         public class CreateSocialMediaCommandHandler : IRequestHandler<CreateSocialMediaCommand, CreatedSocialMediaDto>
         {
             private ISocialMediaRepository _socialMediaRepository;

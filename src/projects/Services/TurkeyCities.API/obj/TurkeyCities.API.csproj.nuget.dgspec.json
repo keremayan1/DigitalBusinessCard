@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kerem\\Desktop\\DigitalBusinessCard\\src\\projects\\TurkeyCities.API\\TurkeyCities.API.csproj": {}
+    "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\TurkeyCities.API\\TurkeyCities.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kerem\\Desktop\\DigitalBusinessCard\\src\\projects\\TurkeyCities.API\\TurkeyCities.API.csproj": {
+    "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\TurkeyCities.API\\TurkeyCities.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kerem\\Desktop\\DigitalBusinessCard\\src\\projects\\TurkeyCities.API\\TurkeyCities.API.csproj",
+        "projectUniqueName": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\TurkeyCities.API\\TurkeyCities.API.csproj",
         "projectName": "TurkeyCities.API",
-        "projectPath": "C:\\Users\\kerem\\Desktop\\DigitalBusinessCard\\src\\projects\\TurkeyCities.API\\TurkeyCities.API.csproj",
+        "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\TurkeyCities.API\\TurkeyCities.API.csproj",
         "packagesPath": "C:\\Users\\kerem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kerem\\Desktop\\DigitalBusinessCard\\src\\projects\\TurkeyCities.API\\obj\\",
+        "outputPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\TurkeyCities.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -27,7 +27,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -82,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

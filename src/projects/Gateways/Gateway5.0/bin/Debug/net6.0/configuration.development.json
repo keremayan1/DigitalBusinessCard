@@ -11,7 +11,11 @@
       ],
       "UpstreamPathTemplate": "/services/socialmedia/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "UpstreamSchema": "http"
+      "UpstreamSchema": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
     },
     { //Game
       "DownstreamPathTemplate": "/api/{everything}",
@@ -24,7 +28,11 @@
       ],
       "UpstreamPathTemplate": "/services/game/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "UpstreamSchema": "http"
+      "UpstreamSchema": "http",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
     },
 
   ],

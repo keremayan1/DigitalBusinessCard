@@ -1,10 +1,11 @@
 version: "3.8"
 services:
+ 
   authdb:
    container_name: AuthDb
    user: root
    ports:
-    - 1434:1433
+    - 1433:1433
    volumes:
     - auth_volume:/var/opt/mssql
    environment:
@@ -14,9 +15,60 @@ services:
    container_name: AuthAPI  
    environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - "ConnectionStrings:SQLConnectionString=Server=authdb,1434;Database=authdb;User=sa;Password=Password12*" 
+      - "ConnectionStrings:SQLConnectionString=Server=authdb,1433;Database=AuthDb;User=sa;Password=Password12*" 
    depends_on:
     - authdb
    ports:
-    - 5002:80
-     
+    - "5002:80"
+ 
+  socialmediadb:
+   container_name: SocialMediaDb
+   user: root
+   ports:
+    - 1434:1433
+   volumes:
+    - socialmedia_volume:/var/opt/mssql
+    
+   environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Password12* 
+  
+  socialmedia.api:
+   container_name: SocialMediaAPI  
+   environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:SQLConnectionString=Server=socialmediadb,1433;Database=SocialMediaDb;User=sa;Password=Password12*" 
+   depends_on:
+    - socialmediadb
+   volumes:
+   - type: volume
+     source: socialmedia_volume
+     target: /app/wwwroot/images 
+   ports:
+    - "5010:80" 
+
+  gamedb:
+   container_name: GameDb
+   user: root
+   ports:
+    - 1435:1433
+   volumes:
+    - game_volume:/var/opt/mssql
+    
+   environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Password12*   
+  game.api:
+   container_name: GameAPI  
+   environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:SQLConnectionString=Server=Game,1433;Database=GameDb;User=sa;Password=Password12*" 
+   depends_on:
+    - gamedb
+   volumes:
+   - type: volume
+     source: game_volume
+     target: /app/wwwroot/images 
+   ports:
+    - "5011:80"
+    - "7011:80"

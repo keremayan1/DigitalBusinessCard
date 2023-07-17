@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\kerem\\Desktop\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\WebAPI\\wwwroot\\images\\Facebook_Logo_(2019).png",
-      "PackagePath": "staticwebassets\\images\\Facebook_Logo_(2019).png"
+      "Id": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\WebAPI\\wwwroot\\images\\PUBG Mobile.png",
+      "PackagePath": "staticwebassets\\images\\PUBG Mobile.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Core.Persistance
-build_property.ProjectDir = c:\Users\kerem\Desktop\DigitalBusinessCard\src\corePackages\Core.Persistance\
+build_property.ProjectDir = c:\Users\kerem\source\repos\DigitalBusinessCard\src\corePackages\Core.Persistance\

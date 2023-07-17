@@ -2,6 +2,8 @@
 using Application.Features.SocialMediaImages.Rules;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Constants;
+using Core.Application.Pipelines.Authorization;
 using Core.Persistance.Images;
 using Domain.Entities.Concrete;
 using MediatR;
@@ -9,11 +11,12 @@ using Microsoft.AspNetCore.Http;
 
 namespace Application.Features.SocialMediaImages.Commands.Add
 {
-    public class CreateSocialMediaImageCommand:IRequest<CreatedSocialMediaImageDto>
+    public class CreateSocialMediaImageCommand:IRequest<CreatedSocialMediaImageDto>,ISecuredRequest
     {
         public int SocialMediaId { get; set; }
-        
         public IFormFile File { get; set; }
+        public string[] Roles => new[] { Permissions.Admin};
+
         public class CreateSocialMediaImageCommandHandler : IRequestHandler<CreateSocialMediaImageCommand, CreatedSocialMediaImageDto>
         {
             private ImageService _imageService;

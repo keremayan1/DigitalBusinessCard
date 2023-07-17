@@ -1,6 +1,8 @@
 ﻿using Application.Features.UserGames.DTOs;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Constants;
+using Core.Application.Pipelines.Authorization;
 using Core.Shared.Services;
 using Domain.Entities.Concrete;
 using MediatR;
@@ -12,10 +14,11 @@ using System.Threading.Tasks;
 
 namespace Application.Features.UserGames.Commands.Add
 {
-    public class CreateUserGameCommand:IRequest<CreatedUserGameDto>
+    public class CreateUserGameCommand:IRequest<CreatedUserGameDto>,ISecuredRequest
     {
         public int GameId { get; set; }
         public string GameUrl { get; set; }
+        public string[] Roles => new[] { Permissions.Admin, Permissions.User, Permissions.Moderator };
         public class CreateUserGameCommandHandler : IRequestHandler<CreateUserGameCommand, CreatedUserGameDto>
         {
             private IUserGameRepository _userGameRepository;

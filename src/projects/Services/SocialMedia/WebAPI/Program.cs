@@ -1,4 +1,5 @@
 using Application;
+using Core.Security;
 using Core.Security.Encryption;
 using Core.Security.JWT;
 using Core.Shared;
@@ -12,7 +13,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-
+builder.Services.AddSharedServices();
+builder.Services.AddApplicationServices();
+builder.Services.AddPersistanceServices();
+builder.Services.AddSecurityServices();
 builder.Services.Configure<TokenOptions>(builder.Configuration.GetSection("TokenOptions"));
 TokenOptions? tokenOptions = builder.Configuration.GetSection("TokenOptions").Get<TokenOptions>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
@@ -49,9 +53,7 @@ builder.Services.AddSwaggerGen(opt =>
         }
     });
 });
-builder.Services.AddSharedServices();
-builder.Services.AddApplicationServices();
-builder.Services.AddPersistanceServices();
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

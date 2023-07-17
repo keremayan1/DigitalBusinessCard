@@ -1,7 +1,10 @@
 ﻿using Application.Features.GameImages.Rules;
 using Application.Features.Games.Rules;
 using Application.Features.UserGames.Rules;
+using Core.Application.Pipelines.Authorization;
+using Core.Application.Pipelines.Validation;
 using Core.Persistance.Images.DependencyResolvers;
+using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -25,6 +28,9 @@ namespace Application
             services.AddScoped<GameBusinessRules>();
             services.AddScoped<GameImageBusinessRules>();
             services.AddScoped<UserGameBusinessRules>();
+            services.AddValidatorsFromAssembly(assembly);
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
 
             return services;
           

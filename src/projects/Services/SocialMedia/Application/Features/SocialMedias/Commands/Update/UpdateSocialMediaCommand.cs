@@ -1,6 +1,8 @@
 ﻿using Application.Features.SocialMedias.DTOs;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Constants;
+using Core.Application.Pipelines.Authorization;
 using Domain.Entities.Concrete;
 using MediatR;
 using System;
@@ -11,10 +13,11 @@ using System.Threading.Tasks;
 
 namespace Application.Features.SocialMedias.Commands.Update
 {
-    public class UpdateSocialMediaCommand : IRequest<UpdatedSocialMediaDto>
+    public class UpdateSocialMediaCommand : IRequest<UpdatedSocialMediaDto>,ISecuredRequest
     {
         public int Id { get; set; }
         public string SocialMediaName { get; set; }
+        public string[] Roles => new[] { Permissions.Admin, Permissions.Moderator };
         public class UpdateSocialMediaCommandHandler : IRequestHandler<UpdateSocialMediaCommand, UpdatedSocialMediaDto>
         {
             private ISocialMediaRepository _socialMediaRepository;

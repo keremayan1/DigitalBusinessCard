@@ -2,14 +2,19 @@
 using Application.Features.SocialMediaImages.Rules;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Constants;
+using Core.Application.Pipelines.Authorization;
 using Core.Persistance.Images;
 using MediatR;
 
 namespace Application.Features.SocialMediaImages.Commands.Delete
 {
-    public class DeleteSocialMediaImageCommand : IRequest<DeletedSocialMediaImageDto>
+    public class DeleteSocialMediaImageCommand : IRequest<DeletedSocialMediaImageDto>,ISecuredRequest
     {
         public int SocialMediaId { get; set; }
+
+        public string[] Roles => new[] { Permissions.Admin, Permissions.Moderator };
+
         public class DeleteSocialMediaImageCommandHandler : IRequestHandler<DeleteSocialMediaImageCommand, DeletedSocialMediaImageDto>
         {
             private ImageService _imageService;

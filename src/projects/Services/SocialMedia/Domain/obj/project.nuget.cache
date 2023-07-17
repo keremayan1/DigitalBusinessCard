@@ -1,14 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "hshGGXt/l1/vcmcmO8OH1/U18FL8HUKg/z+KfG+Q2E4FDJWCsCSOnxOZcYUqybYnHMmTlXS4lK2vU7AwkcbQrA==",
+  "dgSpecHash": "Cl2tDCl6XuxLDZYINyRiJ/YsdXcFyxNXXsU8DgHNx3hIhiaVP2Nn4DMgBsRUQtCJmGUrivG0W2BAuI6J56YkWQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kerem\\Desktop\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kerem\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
-    "C:\\Users\\kerem\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
-    "C:\\Users\\kerem\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.6\\fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512",
-    "C:\\Users\\kerem\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
-    "C:\\Users\\kerem\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\kerem\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\kerem\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.1\\microsoft.entityframeworkcore.6.0.1.nupkg.sha512",
     "C:\\Users\\kerem\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.1\\microsoft.entityframeworkcore.abstractions.6.0.1.nupkg.sha512",

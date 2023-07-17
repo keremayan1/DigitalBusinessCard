@@ -2,6 +2,8 @@
 using Application.Features.UserGames.Rules;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Constants;
+using Core.Application.Pipelines.Authorization;
 using Core.Shared.Services;
 using Domain.Entities.Concrete;
 using MediatR;
@@ -13,12 +15,12 @@ using System.Threading.Tasks;
 
 namespace Application.Features.UserGames.Commands.Update
 {
-    public class UpdateUserGameCommand : IRequest<UpdatedUserGameDto>
+    public class UpdateUserGameCommand : IRequest<UpdatedUserGameDto>,ISecuredRequest
     {
         public int Id { get; set; }
         public int GameId { get; set; }
         public string GameUrl { get; set; }
-
+        public string[] Roles => new[] { Permissions.Admin, Permissions.User, Permissions.Moderator };
         public class UpdateUserGameCommandHandler : IRequestHandler<UpdateUserGameCommand, UpdatedUserGameDto>
         {
             private IUserGameRepository _userGameRepository;

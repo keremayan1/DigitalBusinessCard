@@ -5,7 +5,7 @@ namespace Application.Features.SocialMedias.Commands.Add
     {
         public CreateSocialMediaCommandValidatior()
         {
-            RuleFor(c => c.SocialMediaName).NotEmpty();
+            RuleFor(c => c.SocialMediaName).NotEmpty().WithMessage("Sosyal Medya Ismi boş olamaz!");
         }
     }
 }

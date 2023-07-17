@@ -2,16 +2,21 @@
 using Application.Features.SocialMediaImages.Rules;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Constants;
+using Core.Application.Pipelines.Authorization;
 using Core.Persistance.Images;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 
 namespace Application.Features.SocialMediaImages.Commands.Update
 {
-    public class UpdateSocialMediaImageCommand : IRequest<UpdatedSocialMediaImageDto>
+    public class UpdateSocialMediaImageCommand : IRequest<UpdatedSocialMediaImageDto>,ISecuredRequest
     {
         public int SocialMediaId { get; set; }
         public IFormFile File { get; set; }
+
+        public string[] Roles => new[] { Permissions.Admin, Permissions.Moderator };
+
         public class UpdateSocialMediaImageCommandHandler : IRequestHandler<UpdateSocialMediaImageCommand, UpdatedSocialMediaImageDto>
         {
             private ImageService _imageService;

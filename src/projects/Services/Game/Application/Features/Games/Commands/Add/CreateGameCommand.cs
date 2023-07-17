@@ -2,6 +2,8 @@
 using Application.Features.Games.Rules;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Constants;
+using Core.Application.Pipelines.Authorization;
 using Domain.Entities.Concrete;
 using MediatR;
 using System;
@@ -12,9 +14,10 @@ using System.Threading.Tasks;
 
 namespace Application.Features.Games.Commands.Add
 {
-    public class CreateGameCommand:IRequest<CreatedGameDto>
+    public class CreateGameCommand:IRequest<CreatedGameDto>,ISecuredRequest
     {
         public string GameName { get; set; }
+        public string[] Roles => new[] { Permissions.Admin };
         public class CreateGameCommandHandler : IRequestHandler<CreateGameCommand, CreatedGameDto>
         {
             private IGameRepository _gameRepository;

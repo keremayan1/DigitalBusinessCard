@@ -6,18 +6,19 @@ using Application.Features.SocialMedias.Commands.Add;
 using Application.Features.SocialMedias.DTOs;
 using Core.Shared.BaseController;
 using Core.Shared.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading;
 
 namespace WebAPI.Controllers
 {
-    
+    [Authorize]
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class SocialMediaImagesController : BaseController
     {
-        
 
+        
         [HttpPost]
         public async Task<IActionResult> Upload(IFormFile formFile,int socialMediaId)
         {

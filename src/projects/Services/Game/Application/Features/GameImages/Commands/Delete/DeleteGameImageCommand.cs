@@ -3,6 +3,8 @@ using Application.Features.Games.DTOs;
 using Application.Features.Games.Rules;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Constants;
+using Core.Application.Pipelines.Authorization;
 using Core.Persistance.Images;
 using MediatR;
 using System;
@@ -13,9 +15,10 @@ using System.Threading.Tasks;
 
 namespace Application.Features.GameImages.Commands.Delete
 {
-    public class DeleteGameImageCommand:IRequest<DeletedGameImageDto>
+    public class DeleteGameImageCommand:IRequest<DeletedGameImageDto>,ISecuredRequest
     {
         public int GameId { get; set; }
+        public string[] Roles => new[] { Permissions.Admin };
         public class DeleteGameImageCommandHandler : IRequestHandler<DeleteGameImageCommand, DeletedGameImageDto>
         {
             private ImageService _imageService;

@@ -3,9 +3,27 @@ services:
   authdb:
    image: mcr.microsoft.com/mssql/server:2022-latest 
   auth.api:
-   image: ${DOCKER_REGISTRY-}authdb
+   image: ${DOCKER_REGISTRY-}auth.api
    build: 
     context: .
     dockerfile: src/projects/AuthServer/AuthServer.API/Dockerfile
+  socialmediadb:
+   image: mcr.microsoft.com/mssql/server:2022-latest  
+  socialmedia.api:
+   image:  ${DOCKER_REGISTRY-}socialmedia.api
+   build: 
+    context: .
+    dockerfile: src/projects/Services/SocialMedia/WebAPI/Dockerfile
+  gamedb:
+   image: mcr.microsoft.com/mssql/server:2022-latest   
+  game.api:
+   image:  ${DOCKER_REGISTRY-}game.api
+   build: 
+    context: .
+    dockerfile: src/projects/Services/Game/WebAPI/Dockerfile 
 volumes:
   auth_volume:  
+  socialmedia_volume:
+  game_volume:
+  
+  

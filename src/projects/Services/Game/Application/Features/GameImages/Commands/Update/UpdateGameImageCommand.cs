@@ -2,6 +2,8 @@
 using Application.Features.GameImages.Rules;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Constants;
+using Core.Application.Pipelines.Authorization;
 using Core.Persistance.Images;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -13,10 +15,11 @@ using System.Threading.Tasks;
 
 namespace Application.Features.GameImages.Commands.Update
 {
-    public class UpdateGameImageCommand:IRequest<UpdatedGameImageDto>
+    public class UpdateGameImageCommand:IRequest<UpdatedGameImageDto>,ISecuredRequest
     {
         public int GameId { get; set; }
         public IFormFile Photo { get; set; }
+        public string[] Roles => new[] { Permissions.Admin };
         public class UpdateGameImageCommandHandler : IRequestHandler<UpdateGameImageCommand, UpdatedGameImageDto>
         {
             private ImageService _imageService;

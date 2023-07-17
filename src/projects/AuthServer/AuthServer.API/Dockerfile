@@ -1,4 +1,5 @@
-FROM mcr.microsoft.com/dotnet/sdk:7.0-alpine AS build
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+
 WORKDIR /app
 EXPOSE 80
 COPY src/corePackages/Core.CrossCuttingConcerns/*.csproj src/corePackages/Core.CrossCuttingConcerns/
@@ -9,10 +10,10 @@ COPY src/projects/AuthServer/AuthServer.API/*.csproj src/projects/AuthServer/Aut
 RUN dotnet restore src/projects/AuthServer/AuthServer.API/*.csproj
 COPY . .
 RUN dotnet publish src/projects/AuthServer/AuthServer.API/*.csproj -c Release -o out 
-    
 
-FROM mcr.microsoft.com/dotnet/aspnet:7.0-alpine as runtime
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 as runtime
 
 WORKDIR /app
-COPY --from=build /app/out .
-ENTRYPOINT ["dotnet","AuthServer.API.dll"]    
+COPY --from=build /app/out . 
+
+ENTRYPOINT ["dotnet","AuthServer.API.dll"]

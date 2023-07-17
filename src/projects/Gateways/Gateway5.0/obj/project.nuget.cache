@@ -1,14 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "HursTy8Yt5QLnvT2rYK/HbQXfKGEXypPo32qZdj/1CD49JS5A/IG+RPM1Ohfnx7O+2lBT8fesbf6Z+2c9LNNAw==",
+  "dgSpecHash": "PQMvACL+XqpwMXeqfIx3lSjW0KmDOyA5Ha/W4cl+ZuwkYCP7d9OjJ6hrEkzsYttjMrhx8/0n5ruVOSdV8SjZUA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kerem\\Desktop\\DigitalBusinessCard\\src\\projects\\Gateways\\Gateway5.0\\Gateway5.0.csproj",
+  "projectFilePath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Gateways\\Gateway5.0\\Gateway5.0.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kerem\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\kerem\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
-    "C:\\Users\\kerem\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.6\\fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512",
-    "C:\\Users\\kerem\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
-    "C:\\Users\\kerem\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\kerem\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.6\\microsoft.aspnetcore.authentication.jwtbearer.5.0.6.nupkg.sha512",
     "C:\\Users\\kerem\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\kerem\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.1\\microsoft.aspnetcore.jsonpatch.6.0.1.nupkg.sha512",

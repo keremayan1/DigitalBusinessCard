@@ -4,11 +4,13 @@ using Application.Features.GameImages.Commands.Update;
 using Application.Features.Games.Commands.Delete;
 using Core.Shared.BaseController;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
 {
+    [Authorize]
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class GameImagesController : BaseController

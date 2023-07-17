@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M/FBeYde3AicxHEhR6WwsKEqPGsFpQq1qsarkhjuwGCdurssQ4WFABufRtbij1w9b1b/nLnn2zH/ZEB8bW9/KQ==",
+  "dgSpecHash": "bmiw09tCuN3pXzxubr00cVbQZZIwEnvIw5Jnt+GukbL7SYGCMvkVxJM4HryLHWXv8vS5HMcAX2NxC5NFb67GKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kerem\\Desktop\\DigitalBusinessCard\\src\\corePackages\\Core.Shared\\Core.Shared.csproj",
+  "projectFilePath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Shared\\Core.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kerem\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\kerem\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.2\\fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512",
