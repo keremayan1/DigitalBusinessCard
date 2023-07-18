@@ -24,9 +24,9 @@ namespace WebAPI.Controllers
         }
         [Authorize]
         [HttpDelete]
-        public async Task<IActionResult> Delete([FromQuery] DeleteUserSocialMediaCommand deleteUserSocialMediaCommand)
+        public async Task<IActionResult> Delete([FromQuery] int id )
         {
-            DeletedUserSocialMediaDto result = await Mediator.Send(deleteUserSocialMediaCommand);
+            DeletedUserSocialMediaDto result = await Mediator.Send(new DeleteUserSocialMediaCommand { Id=id});
             return Ok(result);
         }
         [Authorize]

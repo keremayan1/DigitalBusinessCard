@@ -6889,7 +6889,6 @@
       "AutoMapper >= 11.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "Core.Application >= 1.0.0",
-      "Core.CrossCuttingConcerns >= 1.0.0",
       "Core.Security >= 1.0.0",
       "Core.Shared >= 1.0.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 10.0.1",
@@ -6936,9 +6935,6 @@
           "projectReferences": {
             "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Application\\Core.Application.csproj": {
               "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Application\\Core.Application.csproj"
-            },
-            "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj": {
-              "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj"
             },
             "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Security\\Core.Security.csproj": {
               "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Security\\Core.Security.csproj"

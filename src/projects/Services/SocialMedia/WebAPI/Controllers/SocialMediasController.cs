@@ -22,9 +22,9 @@ namespace WebAPI.Controllers
             return Created("", result);
         }
         [HttpDelete]
-        public async Task<IActionResult> Delete([FromQuery] DeleteSocialMediaCommand deleteSocialMediaCommand)
+        public async Task<IActionResult> Delete([FromQuery] int id )
         {
-            DeletedSocialMediaDto result = await Mediator.Send(deleteSocialMediaCommand);
+            DeletedSocialMediaDto result = await Mediator.Send(new DeleteSocialMediaCommand { Id=id});
             return Ok(result);
         }
         [HttpPut]

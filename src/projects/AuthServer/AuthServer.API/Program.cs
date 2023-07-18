@@ -6,7 +6,7 @@ using Core.Security.JWT;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-
+using Core.CrossCuttingConcerns.Exceptions;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -67,8 +67,12 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.ConfigureCustomExceptionMiddleware();
 }
-
+if (app.Environment.IsProduction())
+{
+    app.ConfigureCustomExceptionMiddleware();
+}
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();

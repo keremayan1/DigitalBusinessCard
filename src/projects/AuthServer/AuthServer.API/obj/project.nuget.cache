@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QC3ooyRiMPcPyNkBzKlPNc3Vico8gO8nuvUf7JxV0oj/czfeaEe+pr9c5tFclhoas41C4rXqrP5HJDb5eNnFBQ==",
+  "dgSpecHash": "tT+V7oOaZvbJz2NeO8qz5hiPAkRoXwPcba1xpXsxinptGtQiGJKWxbd8wkYyiyp0j7eetWlferzD0x3t5cXpxg==",
   "success": true,
   "projectFilePath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\AuthServer\\AuthServer.API\\AuthServer.API.csproj",
   "expectedPackageFiles": [

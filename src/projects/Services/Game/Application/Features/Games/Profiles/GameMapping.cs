@@ -2,7 +2,10 @@
 using Application.Features.Games.Commands.Delete;
 using Application.Features.Games.Commands.Update;
 using Application.Features.Games.DTOs;
+using Application.Features.Games.Models;
+using Application.Features.UserGames.DTOs;
 using AutoMapper;
+using Core.Persistance.Paging;
 using Domain.Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -24,6 +27,9 @@ namespace Application.Features.Games.Profiles
 
             CreateMap<Game, DeletedGameDto>().ReverseMap();
             CreateMap<Game, DeleteGameCommand>().ReverseMap();
+
+            CreateMap<IPaginate<Game>, GameModel>().ReverseMap();
+            CreateMap<Game, GetListGameDto>().ReverseMap();
         }
     }
 }
