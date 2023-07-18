@@ -21,6 +21,11 @@ services:
    build: 
     context: .
     dockerfile: src/projects/Services/Game/WebAPI/Dockerfile 
+  gateway.api:
+     image: ${DOCKER_REGISTRY-}gateway.api_image
+     build:
+      context: .
+      dockerfile: Gateways/WebGateway/Dockerfile  
 volumes:
   auth_volume:  
   socialmedia_volume:

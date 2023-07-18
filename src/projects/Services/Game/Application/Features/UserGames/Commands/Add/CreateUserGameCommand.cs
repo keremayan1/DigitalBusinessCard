@@ -5,6 +5,7 @@ using Core.Application.Constants;
 using Core.Application.Pipelines.Authorization;
 using Core.Shared.Services;
 using Domain.Entities.Concrete;
+using FluentValidation;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -41,6 +42,14 @@ namespace Application.Features.UserGames.Commands.Add
                 var result = _mapper.Map<CreatedUserGameDto>(mappedModel);
                 return result;
             }
+        }
+    }
+    public class CreateUserGameCommandValidator : AbstractValidator<CreateUserGameCommand>
+    {
+        public CreateUserGameCommandValidator()
+        {
+            RuleFor(x => x.GameId).NotEmpty().WithMessage("Game ID Alanı boş olamaz!");
+            RuleFor(x => x.GameUrl).NotEmpty().WithMessage("Oyun URL Alanı boş olamaz!");
         }
     }
 }

@@ -62,7 +62,7 @@ services:
    container_name: GameAPI  
    environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - "ConnectionStrings:SQLConnectionString=Server=Game,1433;Database=GameDb;User=sa;Password=Password12*" 
+      - "ConnectionStrings:SQLConnectionString=Server=gamedb,1433;Database=GameDb;User=sa;Password=Password12*" 
    depends_on:
     - gamedb
    volumes:
