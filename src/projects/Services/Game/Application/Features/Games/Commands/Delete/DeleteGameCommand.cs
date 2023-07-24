@@ -1,4 +1,5 @@
 ﻿using Application.Features.Games.DTOs;
+using Application.Services.GameImages;
 using Application.Services.Repositories;
 using AutoMapper;
 using Core.Application.Constants;
@@ -21,18 +22,21 @@ namespace Application.Features.Games.Commands.Delete
         {
             private IGameRepository _gameRepository;
             private IMapper _mapper;
+            private IGameImageService _gameImageService;
 
-            public DeleteGameCommandHandler(IGameRepository gameRepository, IMapper mapper)
+            public DeleteGameCommandHandler(IGameRepository gameRepository, IMapper mapper, IGameImageService gameImageService)
             {
                 _gameRepository = gameRepository;
                 _mapper = mapper;
+                _gameImageService = gameImageService;
             }
 
             public async Task<DeletedGameDto> Handle(DeleteGameCommand request, CancellationToken cancellationToken)
             {
                 var getId = await _gameRepository.GetAsync(x => x.Id == request.Id);
+                
                 await _gameRepository.DeleteAsync(getId);
-
+                await _gameImageService.DeleteGameImage(getId.Id);
                 var result = _mapper.Map<DeletedGameDto>(getId);
                 return result;
             }

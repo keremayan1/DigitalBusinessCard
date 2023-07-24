@@ -1,6 +1,7 @@
-﻿using Application.Features.GameImages.Rules;
+﻿
 using Application.Features.Games.Rules;
 using Application.Features.UserGames.Rules;
+using Application.Services.GameImages;
 using Core.Application.Pipelines.Authorization;
 using Core.Application.Pipelines.Validation;
 using Core.Persistance.Images.DependencyResolvers;
@@ -26,8 +27,10 @@ namespace Application
             services.AddMediatR(assembly);
 
             services.AddScoped<GameBusinessRules>();
-            services.AddScoped<GameImageBusinessRules>();
             services.AddScoped<UserGameBusinessRules>();
+
+            services.AddScoped<IGameImageService, GameImageManager>();
+
             services.AddValidatorsFromAssembly(assembly);
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));

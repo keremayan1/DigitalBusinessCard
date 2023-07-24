@@ -1,15 +1,9 @@
-﻿using Application.Features.GameImages.DTOs;
-using Application.Features.UserGames.DTOs;
+﻿using Application.Features.UserGames.DTOs;
 using Application.Services.Repositories;
 using AutoMapper;
 using Core.Application.Constants;
 using Core.Application.Pipelines.Authorization;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Features.UserGames.Commands.Delete
 {

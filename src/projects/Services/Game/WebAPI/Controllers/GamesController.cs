@@ -11,27 +11,27 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
 {
-    [Authorize]
+
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class GamesController : BaseController
     {
         [HttpPost]
-        public async Task<IActionResult> Add([FromBody] CreateGameCommand createGameCommand)
+        public async Task<IActionResult> Add(IFormFile photo, string gameName)
         {
-            CreatedGameDto result = await Mediator.Send(createGameCommand);
+            CreatedGameDto result = await Mediator.Send(new CreateGameCommand { GameName = gameName, Photo = photo });
             return Created("", result);
         }
         [HttpDelete]
         public async Task<IActionResult> Delete([FromQuery] int id)
         {
-            DeletedGameDto result = await Mediator.Send(new DeleteGameCommand { Id=id});
+            DeletedGameDto result = await Mediator.Send(new DeleteGameCommand { Id = id });
             return Created("", result);
         }
         [HttpPut]
-        public async Task<IActionResult> Update([FromBody] UpdateGameCommand updateGameCommand)
+        public async Task<IActionResult> Update([FromBody] UpdateGameCommand updateGameCommand,[FromForm] IFormFile photo)
         {
-            UpdatedGameDto result = await Mediator.Send(updateGameCommand);
+            UpdatedGameDto result = await Mediator.Send(new UpdateGameCommand { Photo = photo });
             return Created("", result);
         }
         [HttpGet]

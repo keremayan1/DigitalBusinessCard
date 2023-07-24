@@ -6,7 +6,9 @@ namespace Domain.Entities.Concrete
     public  class Game : Entity
     {
         public int Id { get; set; }
-        public string GameName { get; set; }
+       public string GameName { get; set; }
+
+        public virtual GameImage? GameImage { get; set; }
     }
 
 }

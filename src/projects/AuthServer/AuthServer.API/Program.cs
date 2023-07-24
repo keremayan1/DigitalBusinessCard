@@ -73,6 +73,7 @@ if (app.Environment.IsProduction())
 {
     app.ConfigureCustomExceptionMiddleware();
 }
+app.UseCors(builder => builder.WithOrigins("http://localhost:5000").AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();

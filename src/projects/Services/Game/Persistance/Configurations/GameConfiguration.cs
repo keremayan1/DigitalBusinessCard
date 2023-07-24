@@ -11,6 +11,7 @@ namespace Persistance.Configurations
             builder.ToTable("Games").HasKey(x => x.Id);
             builder.Property(x => x.Id).HasColumnName("Id");
             builder.Property(x => x.GameName).HasColumnName("GameName");
+            builder.HasOne(x => x.GameImage);
         }
     }
 }

@@ -29,7 +29,7 @@ namespace Application.Features.Games.Profiles
             CreateMap<Game, DeleteGameCommand>().ReverseMap();
 
             CreateMap<IPaginate<Game>, GameModel>().ReverseMap();
-            CreateMap<Game, GetListGameDto>().ReverseMap();
+            CreateMap<Game, GetListGameDto>().ForMember(x=>x.ImageFile,opt=>opt.MapFrom(x=>x.GameImage.ImagePath)).ReverseMap();
         }
     }
 }

@@ -65,6 +65,9 @@ namespace Persistance.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("GameId")
+                        .IsUnique();
+
                     b.ToTable("GameImages", (string)null);
                 });
 
@@ -98,6 +101,17 @@ namespace Persistance.Migrations
                     b.ToTable("UserGames", (string)null);
                 });
 
+            modelBuilder.Entity("Domain.Entities.Concrete.GameImage", b =>
+                {
+                    b.HasOne("Domain.Entities.Concrete.Game", "Game")
+                        .WithOne("GameImage")
+                        .HasForeignKey("Domain.Entities.Concrete.GameImage", "GameId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Game");
+                });
+
             modelBuilder.Entity("Domain.Entities.Concrete.UserGame", b =>
                 {
                     b.HasOne("Domain.Entities.Concrete.Game", "Game")
@@ -107,6 +121,11 @@ namespace Persistance.Migrations
                         .IsRequired();
 
                     b.Navigation("Game");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Concrete.Game", b =>
+                {
+                    b.Navigation("GameImage");
                 });
 #pragma warning restore 612, 618
         }

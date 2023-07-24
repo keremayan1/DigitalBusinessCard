@@ -13,7 +13,7 @@ namespace Persistance.Configurations
             builder.Property(x => x.GameId).HasColumnName("GameId");
             builder.Property(x => x.ImagePath).HasColumnName("ImagePath");
             builder.Property(x => x.Date).HasColumnName("Date");
-          
+            builder.HasOne(x => x.Game);
         }
     }
 }
