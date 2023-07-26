@@ -4,6 +4,6 @@
     {
         public int Id { get; set; }
         public string GameName { get; set; }
-        public string ImageFile { get; set; }
+        public string ImagePath { get; set; }
     }
 }

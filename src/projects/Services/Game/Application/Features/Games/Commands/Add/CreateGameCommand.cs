@@ -19,7 +19,8 @@ namespace Application.Features.Games.Commands.Add
     public class CreateGameCommand : IRequest<CreatedGameDto>, ISecuredRequest
     {
         public string GameName { get; set; }
-        public IFormFile Photo { get; set; }
+
+        public IFormFile File { get; set; }
         public string[] Roles => new[] { Permissions.Admin };
         public class CreateGameCommandHandler : IRequestHandler<CreateGameCommand, CreatedGameDto>
         {
@@ -38,14 +39,14 @@ namespace Application.Features.Games.Commands.Add
 
             public async Task<CreatedGameDto> Handle(CreateGameCommand request, CancellationToken cancellationToken)
             {
-                
+
                 var mappedModel = _mapper.Map<Game>(request);
-             
+
                 await _gameBusinessRules.GameNameCannotBeExistsWhenAdded(mappedModel.GameName);
 
-               await _gameRepository.AddAsync(mappedModel);
-
-                var result2 = await _gameImageService.AddGameImage(new GameImage { GameId=mappedModel.Id},request.Photo, cancellationToken);
+                await _gameRepository.AddAsync(mappedModel);
+                
+                var result2 = await _gameImageService.AddGameImage(new GameImage { GameId = mappedModel.Id }, request.File, cancellationToken);
 
 
                 var result = _mapper.Map<CreatedGameDto>(mappedModel);

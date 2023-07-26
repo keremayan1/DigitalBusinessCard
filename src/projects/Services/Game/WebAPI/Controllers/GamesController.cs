@@ -17,9 +17,9 @@ namespace WebAPI.Controllers
     public class GamesController : BaseController
     {
         [HttpPost]
-        public async Task<IActionResult> Add(IFormFile photo, string gameName)
+        public async Task<IActionResult> Add([FromForm]CreateGameCommand createGameCommand)
         {
-            CreatedGameDto result = await Mediator.Send(new CreateGameCommand { GameName = gameName, Photo = photo });
+            CreatedGameDto result = await Mediator.Send(createGameCommand);
             return Created("", result);
         }
         [HttpDelete]
@@ -29,9 +29,9 @@ namespace WebAPI.Controllers
             return Created("", result);
         }
         [HttpPut]
-        public async Task<IActionResult> Update([FromBody] UpdateGameCommand updateGameCommand,[FromForm] IFormFile photo)
+        public async Task<IActionResult> Update([FromForm]UpdateGameCommand updateGameCommand)
         {
-            UpdatedGameDto result = await Mediator.Send(new UpdateGameCommand { Photo = photo });
+            UpdatedGameDto result = await Mediator.Send(updateGameCommand);
             return Created("", result);
         }
         [HttpGet]

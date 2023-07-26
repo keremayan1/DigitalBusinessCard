@@ -34,9 +34,9 @@ namespace Application.Features.Games.Commands.Delete
             public async Task<DeletedGameDto> Handle(DeleteGameCommand request, CancellationToken cancellationToken)
             {
                 var getId = await _gameRepository.GetAsync(x => x.Id == request.Id);
-                
-                await _gameRepository.DeleteAsync(getId);
                 await _gameImageService.DeleteGameImage(getId.Id);
+                await _gameRepository.DeleteAsync(getId);
+                
                 var result = _mapper.Map<DeletedGameDto>(getId);
                 return result;
             }

@@ -30,16 +30,16 @@
 
     { //Game
       "DownstreamPathTemplate": "/{everything}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5011
+          "Port": 7011
         }
       ],
       "UpstreamPathTemplate": "/services/game/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "UpstreamSchema": "http"
+      "UpstreamSchema": "https"
 
     },
 

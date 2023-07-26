@@ -1,8 +1,16 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\images\\Facebook_Logo_(2019).png",
+      "PackagePath": "staticwebassets\\images\\Facebook_Logo_(2019).png"
+    },
+    {
       "Id": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\images\\PUBG Mobile.png",
       "PackagePath": "staticwebassets\\images\\PUBG Mobile.png"
+    },
+    {
+      "Id": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\images\\Screenshot 2023-07-26 171745.png",
+      "PackagePath": "staticwebassets\\images\\Screenshot 2023-07-26 171745.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props",

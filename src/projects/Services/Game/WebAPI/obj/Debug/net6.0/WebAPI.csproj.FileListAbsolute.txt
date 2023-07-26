@@ -237,3 +237,6 @@ C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\WebAP
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\WebAPI\obj\Debug\net6.0\WebAPI.pdb
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
+C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\WebAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

@@ -33,9 +33,9 @@ namespace Application.Services.GameImages
             return result;
         }
 
-        public async Task<GameImage> DeleteGameImage(int id)
+        public async Task<GameImage> DeleteGameImage(int gameId)
         {
-            var getId = await _gameImageRepository.GetAsync(x => x.Id == id);
+            var getId = await _gameImageRepository.GetAsync(x => x.GameId == gameId);
             _imageService.DeleteFile(getId.ImagePath);
             await _gameImageRepository.DeleteAsync(getId);
             return getId;
