@@ -12,8 +12,8 @@ using Persistance.Contexts;
 namespace Persistance.Migrations
 {
     [DbContext(typeof(SQLContext))]
-    [Migration("20230712222944_userSocialMedia")]
-    partial class userSocialMedia
+    [Migration("20230726154936_AllSocialMedia")]
+    partial class AllSocialMedia
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,56 +28,68 @@ namespace Persistance.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("Id");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("SocialMediaName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("SocialMediaName");
 
                     b.HasKey("Id");
 
-                    b.ToTable("SocialMedias");
+                    b.ToTable("SocialMedias", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.Concrete.SocialMediaImage", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("Id");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime2")
+                        .HasColumnName("Date");
 
                     b.Property<string>("ImagePath")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("ImagePath");
 
                     b.Property<int>("SocialMediaId")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("SocialMediaId");
 
                     b.HasKey("Id");
 
-                    b.ToTable("SocialMediaImages");
+                    b.HasIndex("SocialMediaId")
+                        .IsUnique();
+
+                    b.ToTable("SocialMediaImages", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.Concrete.UserSocialMedia", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("Id");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int>("SocialMediaId")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("SocialMediaId");
 
                     b.Property<string>("SocialMediaUrl")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("SocialMediaUrl");
 
                     b.Property<string>("UserId")
                         .IsRequired()
@@ -85,7 +97,34 @@ namespace Persistance.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("UserSocialMedias");
+                    b.HasIndex("SocialMediaId");
+
+                    b.ToTable("UserSocialMedias", (string)null);
+                });
+
+            modelBuilder.Entity("Domain.Entities.Concrete.SocialMediaImage", b =>
+                {
+                    b.HasOne("Domain.Entities.Concrete.SocialMedia", null)
+                        .WithOne("SocialMediaImage")
+                        .HasForeignKey("Domain.Entities.Concrete.SocialMediaImage", "SocialMediaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Domain.Entities.Concrete.UserSocialMedia", b =>
+                {
+                    b.HasOne("Domain.Entities.Concrete.SocialMedia", "SocialMedia")
+                        .WithMany()
+                        .HasForeignKey("SocialMediaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("SocialMedia");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Concrete.SocialMedia", b =>
+                {
+                    b.Navigation("SocialMediaImage");
                 });
 #pragma warning restore 612, 618
         }

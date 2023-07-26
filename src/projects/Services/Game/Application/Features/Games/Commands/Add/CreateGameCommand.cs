@@ -20,7 +20,8 @@ namespace Application.Features.Games.Commands.Add
     {
         public string GameName { get; set; }
 
-        public IFormFile File { get; set; }
+        public IFormFile Image { get; set; }
+
         public string[] Roles => new[] { Permissions.Admin };
         public class CreateGameCommandHandler : IRequestHandler<CreateGameCommand, CreatedGameDto>
         {
@@ -46,7 +47,7 @@ namespace Application.Features.Games.Commands.Add
 
                 await _gameRepository.AddAsync(mappedModel);
                 
-                var result2 = await _gameImageService.AddGameImage(new GameImage { GameId = mappedModel.Id }, request.File, cancellationToken);
+                 await _gameImageService.AddGameImage(new GameImage { GameId = mappedModel.Id }, request.Image, cancellationToken);
 
 
                 var result = _mapper.Map<CreatedGameDto>(mappedModel);

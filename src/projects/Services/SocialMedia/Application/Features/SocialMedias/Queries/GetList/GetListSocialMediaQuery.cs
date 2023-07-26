@@ -3,12 +3,14 @@ using MediatR;
 using Application.Features.SocialMedias.DTOs;
 
 using Application.Services.Repositories;
+using Microsoft.EntityFrameworkCore;
+using Application.Features.SocialMedias.Models;
 
 namespace Application.Features.SocialMedias.Queries.GetList
 {
-    public class GetListSocialMediaQuery:IRequest<List<GetListSocialMediaDto>>
+    public class GetListSocialMediaQuery:IRequest<SocialMediaModel>
     {
-        public class GetListSocialMediasQueryHandler : IRequestHandler<GetListSocialMediaQuery, List<GetListSocialMediaDto>>
+        public class GetListSocialMediasQueryHandler : IRequestHandler<GetListSocialMediaQuery, SocialMediaModel>
         {
             private ISocialMediaRepository _socialMediaRepository;
             private IMapper _mapper;
@@ -19,10 +21,10 @@ namespace Application.Features.SocialMedias.Queries.GetList
                 _mapper = mapper;
             }
 
-            public async Task<List<GetListSocialMediaDto>> Handle(GetListSocialMediaQuery request, CancellationToken cancellationToken)
+            public async Task<SocialMediaModel> Handle(GetListSocialMediaQuery request, CancellationToken cancellationToken)
             {
-                var socialMedias = await _socialMediaRepository.GetListWithoutInclude();
-                var result = _mapper.Map<List<GetListSocialMediaDto>>(socialMedias);
+                var socialMedias = await _socialMediaRepository.GetListAsync(include:x=>x.Include(x=>x.SocialMediaImage));
+                var result = _mapper.Map<SocialMediaModel>(socialMedias);
                 return result;
             }
         }

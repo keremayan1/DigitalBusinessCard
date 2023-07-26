@@ -12,13 +12,11 @@ using System.Threading;
 
 namespace WebAPI.Controllers
 {
-    [Authorize]
-    [Route("api/[controller]/[action]")]
-    [ApiController]
+    //[Authorize]
+    //[Route("api/[controller]/[action]")]
+    //[ApiController]
     public class SocialMediaImagesController : BaseController
     {
-
-        
         [HttpPost]
         public async Task<IActionResult> Upload(IFormFile formFile,int socialMediaId)
         {

@@ -16,6 +16,7 @@ namespace Persistance.Configurations
             builder.ToTable("SocialMedias").HasKey(x => x.Id);
             builder.Property(x => x.Id).HasColumnName("Id");
             builder.Property(x => x.SocialMediaName).HasColumnName("SocialMediaName");
+            builder.HasOne(x => x.SocialMediaImage);
         }
     }
 }

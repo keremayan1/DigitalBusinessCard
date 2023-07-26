@@ -14,7 +14,7 @@
       "UpstreamSchema": "http"
     },
     { //SocialMedia
-      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamPathTemplate": "/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {

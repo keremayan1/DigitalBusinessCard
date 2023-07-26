@@ -9,6 +9,7 @@ using Core.Persistance.Images.DependencyResolvers;
 using Core.Application.Pipelines.Authorization;
 using Core.Application.Pipelines.Validation;
 using FluentValidation;
+using Application.Services.SocialMediaImages;
 
 namespace Application
 {
@@ -24,6 +25,9 @@ namespace Application
             services.AddScoped<SocialMediaImageBusinessRules>();
             services.AddImageServices();
             services.AddValidatorsFromAssembly(assembly);
+
+            services.AddScoped<ISocialMediaImageService, SocialMediaImageManager>();
+
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
             return services;

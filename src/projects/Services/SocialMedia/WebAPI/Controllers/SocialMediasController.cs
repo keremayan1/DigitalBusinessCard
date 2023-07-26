@@ -16,7 +16,7 @@ namespace WebAPI.Controllers
     public class SocialMediasController : BaseController
     {
         [HttpPost]
-        public async Task<IActionResult> Add([FromBody] CreateSocialMediaCommand createSocialMediaCommand)
+        public async Task<IActionResult> Add([FromForm] CreateSocialMediaCommand createSocialMediaCommand)
         {
             CreatedSocialMediaDto result = await Mediator.Send(createSocialMediaCommand);
             return Created("", result);
@@ -28,7 +28,7 @@ namespace WebAPI.Controllers
             return Ok(result);
         }
         [HttpPut]
-        public async Task<IActionResult> Update([FromBody] UpdateSocialMediaCommand updateSocialMediaCommand)
+        public async Task<IActionResult> Update([FromForm] UpdateSocialMediaCommand updateSocialMediaCommand)
         {
             UpdatedSocialMediaDto result = await Mediator.Send(updateSocialMediaCommand);
             return Ok(result);

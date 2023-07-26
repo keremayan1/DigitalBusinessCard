@@ -6,6 +6,8 @@ namespace Domain.Entities.Concrete
     {
         public int Id { get; set; }
         public string SocialMediaName { get; set; }
-       
+
+        public virtual SocialMediaImage? SocialMediaImage { get; set; }
+
     }
 }

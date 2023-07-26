@@ -1,5 +1,6 @@
 ﻿using Application.Features.SocialMedias.DTOs;
 using Application.Services.Repositories;
+using Application.Services.SocialMediaImages;
 using AutoMapper;
 using Core.Application.Constants;
 using Core.Application.Pipelines.Authorization;
@@ -20,16 +21,19 @@ namespace Application.Features.SocialMedias.Commands.Delete
         {
             private ISocialMediaRepository _socialMediaRepository;
             private IMapper _mapper;
+            private ISocialMediaImageService _socialMediaImageService;
 
-            public DeleteSocialMediaCommandHandler(ISocialMediaRepository socialMediaRepository, IMapper mapper)
+            public DeleteSocialMediaCommandHandler(ISocialMediaRepository socialMediaRepository, IMapper mapper, ISocialMediaImageService socialMediaImageService)
             {
                 _socialMediaRepository = socialMediaRepository;
                 _mapper = mapper;
+                _socialMediaImageService = socialMediaImageService;
             }
 
             public async Task<DeletedSocialMediaDto> Handle(DeleteSocialMediaCommand request, CancellationToken cancellationToken)
             {
                 var getId = await _socialMediaRepository.GetAsync(x => x.Id==request.Id);
+                await _socialMediaImageService.DeleteSocialMediaImage(getId.Id);
                 await _socialMediaRepository.DeleteAsync(getId);
                 var result = _mapper.Map<DeletedSocialMediaDto>(getId);
                 return result;

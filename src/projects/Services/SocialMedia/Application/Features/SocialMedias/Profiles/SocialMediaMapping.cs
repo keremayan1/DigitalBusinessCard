@@ -2,8 +2,10 @@
 using Application.Features.SocialMedias.Commands.Delete;
 using Application.Features.SocialMedias.Commands.Update;
 using Application.Features.SocialMedias.DTOs;
+using Application.Features.SocialMedias.Models;
 using Application.Features.SocialMedias.Queries.GetList;
 using AutoMapper;
+using Core.Persistance.Paging;
 using Domain.Entities.Concrete;
 
 namespace Application.Features.SocialMedias.Profiles
@@ -21,7 +23,8 @@ namespace Application.Features.SocialMedias.Profiles
             CreateMap<SocialMedia, DeletedSocialMediaDto>().ReverseMap();
             CreateMap<SocialMedia, DeleteSocialMediaCommand>().ReverseMap();
 
-            CreateMap<SocialMedia, GetListSocialMediaDto>().ReverseMap();
+            CreateMap<SocialMedia, GetListSocialMediaDto>().ForMember(x=>x.ImagePath,opt=>opt.MapFrom(x=>x.SocialMediaImage.ImagePath)).ReverseMap();
+            CreateMap<IPaginate<SocialMedia>, SocialMediaModel>().ReverseMap();
             
         }
     }

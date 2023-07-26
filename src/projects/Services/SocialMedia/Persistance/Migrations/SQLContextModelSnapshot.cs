@@ -65,6 +65,9 @@ namespace Persistance.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("SocialMediaId")
+                        .IsUnique();
+
                     b.ToTable("SocialMediaImages", (string)null);
                 });
 
@@ -97,6 +100,15 @@ namespace Persistance.Migrations
                     b.ToTable("UserSocialMedias", (string)null);
                 });
 
+            modelBuilder.Entity("Domain.Entities.Concrete.SocialMediaImage", b =>
+                {
+                    b.HasOne("Domain.Entities.Concrete.SocialMedia", null)
+                        .WithOne("SocialMediaImage")
+                        .HasForeignKey("Domain.Entities.Concrete.SocialMediaImage", "SocialMediaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Domain.Entities.Concrete.UserSocialMedia", b =>
                 {
                     b.HasOne("Domain.Entities.Concrete.SocialMedia", "SocialMedia")
@@ -106,6 +118,11 @@ namespace Persistance.Migrations
                         .IsRequired();
 
                     b.Navigation("SocialMedia");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Concrete.SocialMedia", b =>
+                {
+                    b.Navigation("SocialMediaImage");
                 });
 #pragma warning restore 612, 618
         }

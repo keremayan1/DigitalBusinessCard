@@ -19,7 +19,8 @@ namespace Application.Features.Games.Commands.Update
     {
         public int Id { get; set; }
         public string GameName { get; set; }
-        public IFormFile File { get; set; }
+        public IFormFile Image { get; set; }
+
         public string[] Roles => new[] { Permissions.Admin };
         public class UpdateGameCommandHandler : IRequestHandler<UpdateGameCommand, UpdatedGameDto>
         {
@@ -38,7 +39,7 @@ namespace Application.Features.Games.Commands.Update
             {
                 var mappedModel = _mapper.Map<Game>(request);
                 await _gameRepository.UpdateAsync(mappedModel);
-                await _gameImageService.UpdateGameImage(new GameImage { GameId=mappedModel.Id},request.File,cancellationToken);
+                await _gameImageService.UpdateGameImage(new GameImage { GameId=mappedModel.Id},request.Image,cancellationToken);
                 var result = _mapper.Map<UpdatedGameDto>(mappedModel);
                 return result;
             }
