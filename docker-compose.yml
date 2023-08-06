@@ -21,14 +21,23 @@ services:
    build: 
     context: .
     dockerfile: src/projects/Services/Game/WebAPI/Dockerfile 
+  ibandb:
+   image: mcr.microsoft.com/mssql/server:2022-latest  
+  iban.api:
+   image:  ${DOCKER_REGISTRY-}iban.api
+   build: 
+    context: .
+    dockerfile: src/projects/Services/IBANAccount/IBANAccount.API/Dockerfile  
   gateway.api:
      image: ${DOCKER_REGISTRY-}gateway.api_image
      build:
       context: .
       dockerfile: src/projects/Gateways/WebGateway/Dockerfile  
+
 volumes:
   auth_volume:  
   socialmedia_volume:
   game_volume:
+  iban_volume:
   
   

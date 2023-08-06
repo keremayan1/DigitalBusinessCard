@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4kcr+6Gvu313apsGyWSJ9tbDTgCjJXuqgJ9eIE9eHg0=",
+  "Hash": "lcE3nnqKsoFyFjHIGIKJ25UlewOnsYgw0lI6y3YUq1A=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
@@ -15,23 +15,5 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [
-    {
-      "Identity": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\WebAPI\\wwwroot\\images\\PUBG Mobile.png",
-      "SourceId": "WebAPI",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\WebAPI\\wwwroot\\",
-      "BasePath": "_content/WebAPI",
-      "RelativePath": "images/PUBG Mobile.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\PUBG Mobile.png"
-    }
-  ]
+  "Assets": []
 }

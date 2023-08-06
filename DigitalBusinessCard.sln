@@ -49,7 +49,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthServer.API", "src\proje
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TurkeyCities.API", "src\projects\Services\TurkeyCities.API\TurkeyCities.API.csproj", "{3B168D7E-3EF0-4A10-95C0-80DCEFFFC0A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebGateway", "src\projects\Gateways\WebGateway\WebGateway.csproj", "{A4DD924A-70EB-4D29-BDBB-014C23C0ACD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebGateway", "src\projects\Gateways\WebGateway\WebGateway.csproj", "{A4DD924A-70EB-4D29-BDBB-014C23C0ACD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IBANAccount", "IBANAccount", "{E1598A72-B6BD-4BB5-94E0-F7BAA4A704A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBANAccount.API", "src\projects\Services\IBANAccount\IBANAccount.API\IBANAccount.API.csproj", "{BCF565E5-21DF-4A95-9560-3A9EFB2C3B5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -121,6 +125,10 @@ Global
 		{A4DD924A-70EB-4D29-BDBB-014C23C0ACD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4DD924A-70EB-4D29-BDBB-014C23C0ACD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4DD924A-70EB-4D29-BDBB-014C23C0ACD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCF565E5-21DF-4A95-9560-3A9EFB2C3B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF565E5-21DF-4A95-9560-3A9EFB2C3B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF565E5-21DF-4A95-9560-3A9EFB2C3B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF565E5-21DF-4A95-9560-3A9EFB2C3B5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -149,6 +157,8 @@ Global
 		{F01346B0-D8DB-4F0E-8B44-14F3EEF21DD0} = {B8EAF590-1BFF-44F4-8AFB-349B2742F305}
 		{3B168D7E-3EF0-4A10-95C0-80DCEFFFC0A9} = {34BAECE2-951D-4026-9B4A-EF5C50481C84}
 		{A4DD924A-70EB-4D29-BDBB-014C23C0ACD0} = {C994BA5E-25FE-4016-9168-EB009D7D9978}
+		{E1598A72-B6BD-4BB5-94E0-F7BAA4A704A8} = {34BAECE2-951D-4026-9B4A-EF5C50481C84}
+		{BCF565E5-21DF-4A95-9560-3A9EFB2C3B5D} = {E1598A72-B6BD-4BB5-94E0-F7BAA4A704A8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7B549DEC-77B1-4980-B7D6-F0EB42468A14}

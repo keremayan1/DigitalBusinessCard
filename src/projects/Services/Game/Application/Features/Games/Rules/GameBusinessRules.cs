@@ -25,5 +25,14 @@ namespace Application.Features.Games.Rules
             }
 
         }
+        public async Task GameNameCannotBeNullWhenDeleted(int  id)
+        {
+            var result = await _gameRepository.GetAsync(x => x.Id== id);
+            if (result == null)
+            {
+                throw new BusinessException("Name is exists in system!");
+            }
+
+        }
     }
 }

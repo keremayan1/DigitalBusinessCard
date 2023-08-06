@@ -1,16 +1,12 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\images\\PUBG Mobile.png",
-      "PackagePath": "staticwebassets\\images\\PUBG Mobile.png"
+      "Id": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\images\\a4a5638d-992a-43c0-a796-d353565985b3.png",
+      "PackagePath": "staticwebassets\\images\\a4a5638d-992a-43c0-a796-d353565985b3.png"
     },
     {
-      "Id": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\images\\Screenshot 2023-07-26 171745.png",
-      "PackagePath": "staticwebassets\\images\\Screenshot 2023-07-26 171745.png"
-    },
-    {
-      "Id": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\images\\kindpng_2261759.png",
-      "PackagePath": "staticwebassets\\images\\kindpng_2261759.png"
+      "Id": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\images\\aabb8e2a-49bb-4997-8e99-fc707b5b215e.png",
+      "PackagePath": "staticwebassets\\images\\aabb8e2a-49bb-4997-8e99-fc707b5b215e.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props",

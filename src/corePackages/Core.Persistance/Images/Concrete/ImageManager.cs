@@ -5,7 +5,7 @@ namespace Core.Persistance.Images.Concrete
 {
     public class ImageManager : ImageService
     {
-       
+
         public string DeleteFile(string photoUrl)
         {
             var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", photoUrl);
@@ -24,11 +24,13 @@ namespace Core.Persistance.Images.Concrete
 
             if (photo != null && photo.Length > 0)
             {
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", photo.FileName);
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(photo.FileName);
+
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
 
                 using var stream = new FileStream(path, FileMode.Create);
                 await photo.CopyToAsync(stream, cancellationToken);
-                var returnPath = photo.FileName;
+                var returnPath = fileName;
                 return returnPath;
             }
             return "photo is empty";

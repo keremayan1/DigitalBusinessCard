@@ -16,22 +16,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSharedServices();
 builder.Services.AddApplicationServices();
 builder.Services.AddPersistanceServices();
-builder.Services.AddSecurityServices();
-builder.Services.Configure<TokenOptions>(builder.Configuration.GetSection("TokenOptions"));
-TokenOptions? tokenOptions = builder.Configuration.GetSection("TokenOptions").Get<TokenOptions>();
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
-{
-    options.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        ValidIssuer = tokenOptions.Issuer,
-        ValidAudience = tokenOptions.Audience[0],
-        ValidateIssuerSigningKey = true,
-        IssuerSigningKey = SecurityKeyHelper.CreateSecurityKey(tokenOptions.SecurityKey)
-    };
-});
+builder.Services.AddSecurityServices(builder.Configuration);
+
+
 builder.Services.AddSwaggerGen(opt =>
 {
     opt.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme

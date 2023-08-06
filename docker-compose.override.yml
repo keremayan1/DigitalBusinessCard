@@ -41,9 +41,7 @@ services:
    depends_on:
     - socialmediadb
    volumes:
-   - type: volume
-     source: socialmedia_volume
-     target: /app/wwwroot/images 
+   - "socialmedia_volume:/app/wwwroot/images"
    ports:
     - "5010:80" 
   gamedb:
@@ -65,12 +63,32 @@ services:
    depends_on:
     - gamedb
    volumes:
-   - type: volume
-     source: game_volume
-     target: /app/wwwroot/images 
+     - "game_volume:/app/wwwroot/images"
    ports:
     - "5011:80"
     - "7011:80"
+  ibandb:
+   container_name: IbanDb
+   user: root
+   ports:
+    - 1436:1433
+   volumes:
+    - iban_volume:/var/opt/mssql
+   environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Password12*     
+  iban.api:
+   container_name: IbanAPI  
+   environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:SQLConnectionString=Server=ibandb,1433;Database=IbanDb;User=sa;Password=Password12*;" 
+   depends_on:
+    - ibandb
+   volumes:
+     - "iban_volume:/app/wwwroot/images"
+   ports:
+    - "5012:80"
+    - "7012:80"      
   gateway.api:
      container_name: gateway.api
      environment:

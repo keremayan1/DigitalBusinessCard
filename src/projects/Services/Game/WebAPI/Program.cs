@@ -13,26 +13,11 @@ using Core.CrossCuttingConcerns.Exceptions;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddSecurityServices();
+builder.Services.AddSecurityServices(builder.Configuration);
 builder.Services.AddImageServices();
 builder.Services.AddPersistanceServices();
 builder.Services.AddApplicationService();
 builder.Services.AddSharedServices();
-builder.Services.Configure<TokenOptions>(builder.Configuration.GetSection("TokenOptions"));
-TokenOptions? tokenOptions = builder.Configuration.GetSection("TokenOptions").Get<TokenOptions>();
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
-{
-    options.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        ValidIssuer = tokenOptions.Issuer,
-        ValidAudience = tokenOptions.Audience[0],
-        ValidateIssuerSigningKey = true,
-        IssuerSigningKey = SecurityKeyHelper.CreateSecurityKey(tokenOptions.SecurityKey)
-    };
-});
 
 builder.Services.AddSwaggerGen(opt =>
 {
@@ -68,10 +53,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-if (app.Environment.IsProduction())
-{
-    app.ConfigureCustomExceptionMiddleware();
-}
+
+app.ConfigureCustomExceptionMiddleware();
 app.UseCors(builder => builder.WithOrigins("http://localhost:5000").AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
 app.UseStaticFiles();
 app.UseHttpsRedirection();

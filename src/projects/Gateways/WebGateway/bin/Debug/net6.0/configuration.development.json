@@ -25,7 +25,7 @@
       "UpstreamPathTemplate": "/services/socialmedia/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
       "UpstreamSchema": "http"
-      
+
     },
 
     { //Game
@@ -42,8 +42,22 @@
       "UpstreamSchema": "https"
 
     },
+    { //Iban
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5012
+        }
+      ],
+      "UpstreamPathTemplate": "/services/bank/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "UpstreamSchema": "http"
 
-    
+    }
+
+
 
   ],
   "GlobalConfiguration": {

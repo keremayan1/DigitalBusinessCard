@@ -34,4 +34,8 @@
     <ProjectReference Include="..\..\..\corePackages\Core.Shared\Core.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Application\Features\Auths\Commands\EditPassword\" />
+  </ItemGroup>
+
 </Project>

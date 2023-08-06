@@ -458,6 +458,7 @@
       "Core.Security/1.0.0": {
         "dependencies": {
           "Core.Persistance": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.6",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "Microsoft.Extensions.Configuration.Binder": "6.0.0",
           "Microsoft.IdentityModel.Tokens": "6.15.1",
