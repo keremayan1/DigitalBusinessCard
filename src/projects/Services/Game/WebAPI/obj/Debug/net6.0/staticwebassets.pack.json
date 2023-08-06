@@ -1,12 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\images\\a4a5638d-992a-43c0-a796-d353565985b3.png",
-      "PackagePath": "staticwebassets\\images\\a4a5638d-992a-43c0-a796-d353565985b3.png"
-    },
-    {
-      "Id": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\images\\aabb8e2a-49bb-4997-8e99-fc707b5b215e.png",
-      "PackagePath": "staticwebassets\\images\\aabb8e2a-49bb-4997-8e99-fc707b5b215e.png"
+      "Id": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\images\\982f9f0c-2960-4c33-b5bc-3b0e0e73fa63.png",
+      "PackagePath": "staticwebassets\\images\\982f9f0c-2960-4c33-b5bc-3b0e0e73fa63.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props",

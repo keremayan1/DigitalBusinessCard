@@ -1,4 +1,5 @@
-﻿using AuthServer.API.Application.Features.Auths.Commands.Login;
+﻿using AuthServer.API.Application.Features.Auths.Commands.EditPassword;
+using AuthServer.API.Application.Features.Auths.Commands.Login;
 using AuthServer.API.Application.Features.Auths.Commands.Register;
 using AuthServer.API.Application.Features.Auths.DTOs;
 using Core.Security.Dtos;
@@ -36,6 +37,13 @@ namespace AuthServer.API.Controllers
             LoginedDto result = await Mediator.Send(loginCommand);
             SetRefreshTokenToCookie(result.RefreshToken);
             return Ok(result.AccessToken);
+        }
+        [HttpPost]
+        public async Task<IActionResult> EditPassword([FromBody] EditPasswordCommand editPasswordCommand)
+        {
+            UserForUpdatePasswordDto result = await Mediator.Send(editPasswordCommand);
+            return Ok(result);
+
         }
         private void SetRefreshTokenToCookie(RefreshToken refreshToken)
         {

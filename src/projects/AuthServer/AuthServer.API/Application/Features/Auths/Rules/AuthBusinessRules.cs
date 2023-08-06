@@ -27,15 +27,43 @@ namespace AuthServer.API.Application.Features.Auths.Rules
             var getUser = await _userRepository.GetAsync(x => x.Email == email);
             if (getUser == null)
               throw new BusinessException("This email doesn't have in system!");
-
-           
         }
         public async Task PasswordVerify(User user, UserForLoginDto userForLoginDto)
         {
             var isVerified = HashingHelper.VerifyPasswordHash(userForLoginDto.Password, user.PasswordHash, user.PasswordSalt);
             if (!isVerified)
                 throw new AuthorizationException("Wrong Email or Password!");
-           await Task.FromResult(isVerified);
+        }
+        public async Task CheckPasswordOldWrong(string email,string oldPassword)
+        {
+            var user = await _userRepository.GetAsync(x=>x.Email==email);
+            if (user==null)
+            {
+                throw new AuthorizationException("User is not exist");
+            }
+            if (!HashingHelper.VerifyPasswordHash(oldPassword,user.PasswordHash,user.PasswordSalt))
+            {
+                throw new AuthorizationException("Sign in old password");
+            }
+            return;
+        }
+        public bool CheckIfOldPasswordAndNewPasswordAreExists(string oldPassword,string newPassword)
+        {
+            var result = oldPassword == newPassword;
+            if (result)
+            {
+                throw new BusinessException("Old password and new password  doesn't exists");
+            }
+            return result;
+        }
+        public bool CheckPasswordSame(string password,string passwordVerify)
+        {
+            var result = password == passwordVerify;
+            if (!result)
+            {
+                throw new AuthorizationException("This password and passwordVerify doesn't exist");
+            }
+            return result;
         }
 
     }

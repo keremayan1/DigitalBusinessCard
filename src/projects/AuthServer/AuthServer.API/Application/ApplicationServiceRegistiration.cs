@@ -1,4 +1,5 @@
 ﻿using AuthServer.API.Application.Features.Auths.Rules;
+using AuthServer.API.Application.Features.Users.Rules;
 using AuthServer.API.Application.Services.AuthService;
 using AuthServer.API.Application.Services.UserOperationClaimService;
 using Core.Application.Pipelines.Authorization;
@@ -17,6 +18,8 @@ namespace AuthServer.API.Application
             services.AddAutoMapper(assembly);
 
             services.AddScoped<AuthBusinessRules>();
+            services.AddScoped<UserBusinessRules>();
+
             services.AddScoped<IAuthService, AuthManager>();
             services.AddScoped<IUserOperationClaimService, UserOperationClaimManager>();
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KokkhogQ8BccqT9nJfZzGbJDQ/E+pxnc/G0vbDFsyWI=",
+  "Hash": "EIaoQVCWNH3ZBQVipEI7MWnIIt3OvGq8rDvzhkUhghw=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
@@ -15,5 +15,23 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\images\\982f9f0c-2960-4c33-b5bc-3b0e0e73fa63.png",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "images/982f9f0c-2960-4c33-b5bc-3b0e0e73fa63.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\982f9f0c-2960-4c33-b5bc-3b0e0e73fa63.png"
+    }
+  ]
 }
