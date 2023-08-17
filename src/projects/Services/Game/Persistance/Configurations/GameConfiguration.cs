@@ -12,6 +12,7 @@ namespace Persistance.Configurations
             builder.Property(x => x.Id).HasColumnName("Id");
             builder.Property(x => x.GameName).HasColumnName("GameName");
             builder.HasOne(x => x.GameImage);
+            builder.HasMany(x => x.UserGames);
         }
     }
 }

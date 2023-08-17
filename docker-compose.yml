@@ -1,4 +1,4 @@
-version: "3"
+version: "3.8"
 services:
   authdb:
    image: mcr.microsoft.com/mssql/server:2022-latest 
@@ -27,7 +27,10 @@ services:
    image:  ${DOCKER_REGISTRY-}iban.api
    build: 
     context: .
-    dockerfile: src/projects/Services/IBANAccount/IBANAccount.API/Dockerfile  
+    dockerfile: src/projects/Services/IBANAccount/IBANAccount.API/Dockerfile 
+  cryptodb:
+    image: mysql
+
   gateway.api:
      image: ${DOCKER_REGISTRY-}gateway.api_image
      build:
@@ -39,5 +42,6 @@ volumes:
   socialmedia_volume:
   game_volume:
   iban_volume:
+  crypto_volume:
   
   

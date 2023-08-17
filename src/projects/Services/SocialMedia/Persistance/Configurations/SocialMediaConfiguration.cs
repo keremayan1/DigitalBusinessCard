@@ -17,6 +17,7 @@ namespace Persistance.Configurations
             builder.Property(x => x.Id).HasColumnName("Id");
             builder.Property(x => x.SocialMediaName).HasColumnName("SocialMediaName");
             builder.HasOne(x => x.SocialMediaImage);
+            builder.HasMany(x => x.UserSocialMedias);
         }
     }
 }

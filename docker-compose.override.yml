@@ -73,10 +73,20 @@ services:
    ports:
     - 1436:1433
    volumes:
-    - iban_volume:/var/opt/mssql
+      - iban_volume:/var/opt/mssql
    environment:
       - ACCEPT_EULA=Y
-      - MSSQL_SA_PASSWORD=Password12*     
+      - MSSQL_SA_PASSWORD=Password12* 
+  cryptodb:
+   container_name: CryptoDb
+   user: root
+   ports:
+    - 3307:3306
+   environment:
+     - MYSQL_ROOT_PASSWORD=Password12*
+     - MYSQL_DATABASE=crypto-db
+   volumes:
+     - crypto_volume:/var/lib/mysql   
   iban.api:
    container_name: IbanAPI  
    environment:

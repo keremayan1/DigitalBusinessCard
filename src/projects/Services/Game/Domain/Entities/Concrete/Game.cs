@@ -9,6 +9,7 @@ namespace Domain.Entities.Concrete
        public string GameName { get; set; }
 
         public virtual GameImage? GameImage { get; set; }
+        public List<UserGame> UserGames { get; set; }
     }
 
 }
