@@ -1,4 +1,4 @@
-﻿using AuthServer.API.Application.Features.Auths.Commands.EditPassword;
+﻿using AuthServer.API.Application.Features.Users.Commands.EditPassword;
 using AutoMapper;
 using Core.Security.Dtos;
 using Core.Security.Entities;
