@@ -29,8 +29,12 @@ services:
     context: .
     dockerfile: src/projects/Services/IBANAccount/IBANAccount.API/Dockerfile 
   cryptodb:
-    image: mysql
-
+    image: mcr.microsoft.com/mssql/server:2022-latest 
+  crypto.api:
+   image:  ${DOCKER_REGISTRY-}crypto.api
+   build: 
+    context: .
+    dockerfile: src/projects/Services/CyrptoAccount/WebAPI/Dockerfile 
   gateway.api:
      image: ${DOCKER_REGISTRY-}gateway.api_image
      build:

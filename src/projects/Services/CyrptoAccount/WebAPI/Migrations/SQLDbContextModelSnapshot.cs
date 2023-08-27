@@ -2,7 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Migrations;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebAPI.Persistance.Contexts;
 
@@ -10,32 +10,35 @@ using WebAPI.Persistance.Contexts;
 
 namespace WebAPI.Migrations
 {
-    [DbContext(typeof(MySQLDbContext))]
-    [Migration("20230817201141_inital")]
-    partial class inital
+    [DbContext(typeof(SQLDbContext))]
+    partial class SQLDbContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "6.0.1")
-                .HasAnnotation("Relational:MaxIdentifierLength", 64);
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
             modelBuilder.Entity("WebAPI.Domain.Entities.Crypto", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("id");
+                        .HasColumnName("Id");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("CryptoName")
                         .IsRequired()
-                        .HasColumnType("longtext")
-                        .HasColumnName("crypto_name");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("CryptoName");
 
                     b.HasKey("Id");
 
-                    b.ToTable("cryptos", (string)null);
+                    b.ToTable("Cryptos", (string)null);
                 });
 
             modelBuilder.Entity("WebAPI.Domain.Entities.CryptoImage", b =>
@@ -43,27 +46,29 @@ namespace WebAPI.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("id");
+                        .HasColumnName("Id");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int>("CryptoId")
                         .HasColumnType("int")
-                        .HasColumnName("crypto_id");
+                        .HasColumnName("CryptoId");
 
                     b.Property<DateTime>("Date")
-                        .HasColumnType("datetime(6)")
-                        .HasColumnName("date");
+                        .HasColumnType("datetime2")
+                        .HasColumnName("Date");
 
                     b.Property<string>("ImagePath")
                         .IsRequired()
-                        .HasColumnType("longtext")
-                        .HasColumnName("image_path");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("ImagePath");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CryptoId")
                         .IsUnique();
 
-                    b.ToTable("crypto_images", (string)null);
+                    b.ToTable("CryptoImages", (string)null);
                 });
 
             modelBuilder.Entity("WebAPI.Domain.Entities.UserCyrpto", b =>
@@ -71,27 +76,29 @@ namespace WebAPI.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("id");
+                        .HasColumnName("Id)");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int>("CryptoId")
                         .HasColumnType("int")
-                        .HasColumnName("crypto_id");
+                        .HasColumnName("CryptoId");
 
                     b.Property<string>("CryptoUrl")
                         .IsRequired()
-                        .HasColumnType("longtext")
-                        .HasColumnName("crypto_url");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("CryptoUrl");
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("longtext")
-                        .HasColumnName("user_id");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("UserId");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CryptoId");
 
-                    b.ToTable("user_crypto", (string)null);
+                    b.ToTable("UserCrypto", (string)null);
                 });
 
             modelBuilder.Entity("WebAPI.Domain.Entities.CryptoImage", b =>

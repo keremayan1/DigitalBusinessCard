@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Hzh2H7KZcN1+H1Cyffl4fEE0+vzb9qA0cn61wm88xVI=",
+  "Hash": "GdLXpAX/EfTD4+/gFAMawt42mfkx3A/+o7kyw+ovzUQ=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
@@ -32,6 +32,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\2d279cf3-cfea-44db-936c-ba4574c632af.png"
+    },
+    {
+      "Identity": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\images\\49df48d0-ad31-4d29-a923-93c55cf8368e.png",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "images/49df48d0-ad31-4d29-a923-93c55cf8368e.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\49df48d0-ad31-4d29-a923-93c55cf8368e.png"
     },
     {
       "Identity": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\images\\b02cc3b4-7b79-4d4a-b668-cee68dfb4105.png",

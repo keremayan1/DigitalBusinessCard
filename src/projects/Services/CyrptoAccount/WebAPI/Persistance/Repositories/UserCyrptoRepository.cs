@@ -5,9 +5,9 @@ using WebAPI.Persistance.Contexts;
 
 namespace WebAPI.Persistance.Repositories
 {
-    public class UserCyrptoRepository : EfRepositoryBase<UserCyrpto, MySQLDbContext>, IUserCryptoRepository
+    public class UserCyrptoRepository : EfRepositoryBase<UserCyrpto, SQLDbContext>, IUserCryptoRepository
     {
-        public UserCyrptoRepository(MySQLDbContext context) : base(context)
+        public UserCyrptoRepository(SQLDbContext context) : base(context)
         {
         }
     }

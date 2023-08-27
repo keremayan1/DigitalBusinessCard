@@ -9,7 +9,7 @@ namespace WebAPI.Persistance
         public static IServiceCollection AddPersistanceService(this IServiceCollection services)
         {
 
-            services.AddDbContext<MySQLDbContext>();
+            services.AddDbContext<SQLDbContext>();
             services.AddScoped<ICryptoRepository, CyrptoRepository>();
             services.AddScoped<ICryptoImageRepository, CyrptoImageRepository>();
             services.AddScoped<IUserCryptoRepository, UserCyrptoRepository>();

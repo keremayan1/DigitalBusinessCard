@@ -3,17 +3,17 @@ using System.Reflection;
 
 namespace WebAPI.Persistance.Contexts
 {
-    public class MySQLDbContext:DbContext
+    public class SQLDbContext:DbContext
     {
         public IConfiguration Configuration { get; set; }
-        public MySQLDbContext(DbContextOptions dbContextOptions,IConfiguration configuration):base(dbContextOptions)
+        public SQLDbContext(DbContextOptions dbContextOptions,IConfiguration configuration):base(dbContextOptions)
         {
             Configuration = configuration;
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connectionString = Configuration.GetConnectionString("MySQLConnectionString");
-            optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+            
+            optionsBuilder.UseSqlServer(Configuration.GetConnectionString("SQLConnectionString"));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -8,11 +8,11 @@ namespace WebAPI.Persistance.Configurations
     {
         public void Configure(EntityTypeBuilder<UserCyrpto> builder)
         {
-            builder.ToTable("user_crypto").HasKey(x => x.Id);
-            builder.Property(x => x.Id).HasColumnName("id");
-            builder.Property(x => x.CryptoId).HasColumnName("crypto_id");
-            builder.Property(x => x.UserId).HasColumnName("user_id");
-            builder.Property(x => x.CryptoUrl).HasColumnName("crypto_url");
+            builder.ToTable("UserCrypto").HasKey(x => x.Id);
+            builder.Property(x => x.Id).HasColumnName("Id)");
+            builder.Property(x => x.CryptoId).HasColumnName("CryptoId");
+            builder.Property(x => x.UserId).HasColumnName("UserId");
+            builder.Property(x => x.CryptoUrl).HasColumnName("CryptoUrl");
 
             builder.HasOne(x => x.Crypto);
         }

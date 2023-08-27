@@ -8,11 +8,11 @@ namespace WebAPI.Persistance.Configurations
     {
         public void Configure(EntityTypeBuilder<CryptoImage> builder)
         {
-            builder.ToTable("crypto_images").HasKey(x => x.Id);
-            builder.Property(x => x.Id).HasColumnName("id");
-            builder.Property(x => x.CryptoId).HasColumnName("crypto_id");
-            builder.Property(x => x.ImagePath).HasColumnName("image_path");
-            builder.Property(x => x.Date).HasColumnName("date");
+            builder.ToTable("CryptoImages").HasKey(x => x.Id);
+            builder.Property(x => x.Id).HasColumnName("Id");
+            builder.Property(x => x.CryptoId).HasColumnName("CryptoId");
+            builder.Property(x => x.ImagePath).HasColumnName("ImagePath");
+            builder.Property(x => x.Date).HasColumnName("Date");
 
             builder.HasOne(x => x.Crypto);
         }

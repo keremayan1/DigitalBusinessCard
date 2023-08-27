@@ -77,16 +77,31 @@ services:
    environment:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=Password12* 
+  
   cryptodb:
    container_name: CryptoDb
    user: root
    ports:
-    - 3307:3306
+    - 1437:1433
    environment:
-     - MYSQL_ROOT_PASSWORD=Password12*
-     - MYSQL_DATABASE=crypto-db
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Password12*
    volumes:
-     - crypto_volume:/var/lib/mysql   
+     - crypto_volume:/var/opt/mssql
+  crypto.api:
+   container_name: CryptoAPI  
+   environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:SQLConnectionString=Server=cryptodb,1433;Database=CryptoDb;User=sa;Password=Password12*;" 
+   depends_on:
+    - cryptodb
+   volumes:
+     - "crypto_volume:/app/wwwroot/images"
+   ports:
+    - "5013:80"
+  
+  
+  
   iban.api:
    container_name: IbanAPI  
    environment:

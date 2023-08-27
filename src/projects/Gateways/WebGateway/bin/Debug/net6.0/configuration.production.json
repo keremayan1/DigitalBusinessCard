@@ -25,7 +25,7 @@
       "UpstreamPathTemplate": "/services/socialmedia/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
       "UpstreamSchema": "http"
-     
+
     },
     { //Game
       "DownstreamPathTemplate": "/{everything}",
@@ -51,6 +51,20 @@
         }
       ],
       "UpstreamPathTemplate": "/services/bank/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "UpstreamSchema": "http"
+
+    },
+    { //Crypto
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "crypto.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/services/crypto/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
       "UpstreamSchema": "http"
 
