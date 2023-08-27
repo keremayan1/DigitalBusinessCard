@@ -12,5 +12,6 @@ namespace Core.Application.Constants
         public const string User = "user";
         public const string Moderator = "moderator";
         public const int UserId = 3;
+        public const string SectorReadonlyScope = "sector_readonly";
     }
 }

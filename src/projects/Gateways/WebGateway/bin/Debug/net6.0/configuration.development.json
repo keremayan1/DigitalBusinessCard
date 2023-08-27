@@ -51,7 +51,7 @@
           "Port": 5012
         }
       ],
-      "UpstreamPathTemplate": "/services/bank/{everything}",
+      "UpstreamPathTemplate": "/services/bankiban/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
       "UpstreamSchema": "http"
 
