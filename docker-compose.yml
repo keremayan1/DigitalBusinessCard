@@ -35,6 +35,13 @@ services:
    build: 
     context: .
     dockerfile: src/projects/Services/CyrptoAccount/WebAPI/Dockerfile 
+  companydb:
+    image: mcr.microsoft.com/mssql/server:2022-latest   
+  company.api:
+   image:  ${DOCKER_REGISTRY-}company.api
+   build: 
+    context: .
+    dockerfile: src/projects/Services/Company/WebAPI/Dockerfile  
   gateway.api:
      image: ${DOCKER_REGISTRY-}gateway.api_image
      build:
@@ -47,5 +54,6 @@ volumes:
   game_volume:
   iban_volume:
   crypto_volume:
+  company_volume:
   
   

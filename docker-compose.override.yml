@@ -99,9 +99,27 @@ services:
      - "crypto_volume:/app/wwwroot/images"
    ports:
     - "5013:80"
-  
-  
-  
+  companydb:
+   container_name: CompanyDb
+   user: root
+   ports:
+    - 1439:1433
+   environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Password12*
+   volumes:
+     - company_volume:/var/opt/mssql
+  company.api:
+   container_name: CompanyAPI  
+   environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:SQLConnectionString=Server=companydb,1433;Database=CompanyDb;User=sa;Password=Password12*;" 
+   depends_on:
+    - companydb
+   volumes:
+     - "company_volume:/app/wwwroot/images"
+   ports:
+    - "5293:80"
   iban.api:
    container_name: IbanAPI  
    environment:

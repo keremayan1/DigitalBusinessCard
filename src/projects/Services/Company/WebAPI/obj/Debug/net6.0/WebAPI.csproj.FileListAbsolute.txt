@@ -117,3 +117,4 @@ C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Company\We
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Company\WebAPI\bin\Debug\net6.0\Core.Security.pdb
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Company\WebAPI\bin\Debug\net6.0\Core.Shared.pdb
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Company\WebAPI\bin\Debug\net6.0\Core.Application.pdb
+C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Company\WebAPI\bin\Debug\net6.0\WebAPI.staticwebassets.runtime.json

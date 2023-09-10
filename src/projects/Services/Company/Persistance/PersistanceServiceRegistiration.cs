@@ -17,6 +17,11 @@ namespace Persistance
             });
             services.AddScoped<ISectorRepository, SectorRepository>();
             services.AddScoped<IAddressRepository, AddressRepository>();
+            services.AddScoped<ICompanyInfoRepository, CompanyInfoRepository>();
+            services.AddScoped<ICompanyInfoImageRepository, CompanyInfoImageRepository>();
+            services.AddScoped<IIbanAccountRepository, IbanAccountRepository>();
+            services.AddScoped<IIbanInfoImageRepository, IbanInfoImageRepository>();
+            services.AddScoped<IIbanInfoRepository, IbanInfoRepository>();
             return services;
         }
     }

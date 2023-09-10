@@ -1,4 +1,7 @@
-﻿using Application.Services.CityService;
+﻿using Application.Services.AddressService;
+using Application.Services.CityService;
+using Application.Services.CompanyImageService;
+using Application.Services.IbanInfoImageService;
 using Core.Application.Pipelines.Authorization;
 using Core.Application.Pipelines.Validation;
 using FluentValidation;
@@ -20,6 +23,10 @@ namespace Application
             services.AddValidatorsFromAssembly(assembly);
 
             services.AddHttpClient<IProvinceService, ProvinceManager>();
+
+            services.AddScoped<IAddressService, AddressManager>();
+            services.AddScoped<ICompanyInfoImageService, CompanyInfoImageManager>();
+            services.AddScoped<IIbanInfoImageService, IbanInfoImageManager>();
 
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
