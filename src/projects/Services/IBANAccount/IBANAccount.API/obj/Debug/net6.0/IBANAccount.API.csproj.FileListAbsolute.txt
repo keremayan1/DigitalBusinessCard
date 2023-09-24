@@ -7,6 +7,7 @@ C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccoun
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\libzstd.dylib
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\appsettings.json
+C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\IBANAccount.API.staticwebassets.runtime.json
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\IBANAccount.API.exe
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\IBANAccount.API.deps.json
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\IBANAccount.API.runtimeconfig.json
@@ -42,8 +43,10 @@ C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccoun
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\MongoDB.Driver.dll
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\MongoDB.Driver.Core.dll
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
+C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\MySqlConnector.dll
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\Otp.NET.dll
+C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\Serilog.dll
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\Serilog.Sinks.File.dll
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\SharpCompress.dll
@@ -84,8 +87,10 @@ C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccoun
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\Core.CrossCuttingConcerns.dll
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\Core.Persistance.dll
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\Core.Security.dll
+C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\Core.Shared.dll
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\Core.Application.pdb
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\Core.Persistance.pdb
+C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\Core.Shared.pdb
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\Core.CrossCuttingConcerns.pdb
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\Core.Security.pdb
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\obj\Debug\net6.0\IBANAccount.API.csproj.AssemblyReference.cache
@@ -109,8 +114,3 @@ C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccoun
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\obj\Debug\net6.0\IBANAccount.API.pdb
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\obj\Debug\net6.0\IBANAccount.API.genruntimeconfig.cache
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\obj\Debug\net6.0\ref\IBANAccount.API.dll
-C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\Core.Shared.dll
-C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\Core.Shared.pdb
-C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\IBANAccount.API.staticwebassets.runtime.json
-C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\MySqlConnector.dll
-C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\IBANAccount\IBANAccount.API\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll

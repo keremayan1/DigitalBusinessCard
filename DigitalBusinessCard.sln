@@ -61,13 +61,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "src\projects\Serv
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Company", "Company", "{9E1BA016-739E-421F-AF45-6F77F54C970D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\projects\Services\Company\Application\Application.csproj", "{032ADEAF-5C35-43C9-8221-84AED2E35C0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\projects\Services\Company\Application\Application.csproj", "{032ADEAF-5C35-43C9-8221-84AED2E35C0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\projects\Services\Company\Domain\Domain.csproj", "{B0112133-37CB-4160-9942-4CB9C48BCA80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\projects\Services\Company\Domain\Domain.csproj", "{B0112133-37CB-4160-9942-4CB9C48BCA80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistance", "src\projects\Services\Company\Persistance\Persistance.csproj", "{F8C10068-6D36-4F35-B0C5-94C73B1FA7A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistance", "src\projects\Services\Company\Persistance\Persistance.csproj", "{F8C10068-6D36-4F35-B0C5-94C73B1FA7A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "src\projects\Services\Company\WebAPI\WebAPI.csproj", "{F4FEC3A3-4CBF-4335-88B3-56E685CA0505}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "src\projects\Services\Company\WebAPI\WebAPI.csproj", "{F4FEC3A3-4CBF-4335-88B3-56E685CA0505}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserInfo", "UserInfo", "{169E9707-1B37-4B4E-AD19-8D1862498B2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "src\projects\Services\UserInfo\WebAPI\WebAPI.csproj", "{93307084-B3EB-4BB6-9196-7F3F6D910906}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\projects\Services\UserInfo\Domain\Domain.csproj", "{CD8230E6-892F-4963-BB07-BA43A0489BBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\projects\Services\UserInfo\Application\Application.csproj", "{F5A70EED-DCB8-40EF-850A-745481B84D0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistance", "src\projects\Services\UserInfo\Persistance\Persistance.csproj", "{CBD0B1E3-4E53-4B33-B9B7-D7EFB90592E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -163,6 +173,22 @@ Global
 		{F4FEC3A3-4CBF-4335-88B3-56E685CA0505}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4FEC3A3-4CBF-4335-88B3-56E685CA0505}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4FEC3A3-4CBF-4335-88B3-56E685CA0505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93307084-B3EB-4BB6-9196-7F3F6D910906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93307084-B3EB-4BB6-9196-7F3F6D910906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93307084-B3EB-4BB6-9196-7F3F6D910906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93307084-B3EB-4BB6-9196-7F3F6D910906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD8230E6-892F-4963-BB07-BA43A0489BBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD8230E6-892F-4963-BB07-BA43A0489BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD8230E6-892F-4963-BB07-BA43A0489BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD8230E6-892F-4963-BB07-BA43A0489BBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5A70EED-DCB8-40EF-850A-745481B84D0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A70EED-DCB8-40EF-850A-745481B84D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A70EED-DCB8-40EF-850A-745481B84D0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A70EED-DCB8-40EF-850A-745481B84D0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBD0B1E3-4E53-4B33-B9B7-D7EFB90592E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBD0B1E3-4E53-4B33-B9B7-D7EFB90592E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBD0B1E3-4E53-4B33-B9B7-D7EFB90592E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBD0B1E3-4E53-4B33-B9B7-D7EFB90592E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -200,6 +226,11 @@ Global
 		{B0112133-37CB-4160-9942-4CB9C48BCA80} = {9E1BA016-739E-421F-AF45-6F77F54C970D}
 		{F8C10068-6D36-4F35-B0C5-94C73B1FA7A3} = {9E1BA016-739E-421F-AF45-6F77F54C970D}
 		{F4FEC3A3-4CBF-4335-88B3-56E685CA0505} = {9E1BA016-739E-421F-AF45-6F77F54C970D}
+		{169E9707-1B37-4B4E-AD19-8D1862498B2E} = {34BAECE2-951D-4026-9B4A-EF5C50481C84}
+		{93307084-B3EB-4BB6-9196-7F3F6D910906} = {169E9707-1B37-4B4E-AD19-8D1862498B2E}
+		{CD8230E6-892F-4963-BB07-BA43A0489BBC} = {169E9707-1B37-4B4E-AD19-8D1862498B2E}
+		{F5A70EED-DCB8-40EF-850A-745481B84D0B} = {169E9707-1B37-4B4E-AD19-8D1862498B2E}
+		{CBD0B1E3-4E53-4B33-B9B7-D7EFB90592E0} = {169E9707-1B37-4B4E-AD19-8D1862498B2E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7B549DEC-77B1-4980-B7D6-F0EB42468A14}

@@ -30,11 +30,6 @@ C:\Users\kerem\Desktop\DigitalBusinessCard\src\projects\Services\Game\Persistanc
 C:\Users\kerem\Desktop\DigitalBusinessCard\src\projects\Services\Game\Persistance\bin\Debug\net6.0\Core.Shared.dll
 C:\Users\kerem\Desktop\DigitalBusinessCard\src\projects\Services\Game\Persistance\bin\Debug\net6.0\Core.CrossCuttingConcerns.pdb
 C:\Users\kerem\Desktop\DigitalBusinessCard\src\projects\Services\Game\Persistance\bin\Debug\net6.0\Core.Shared.pdb
-C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\obj\Debug\net6.0\Persistance.csproj.AssemblyReference.cache
-C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\obj\Debug\net6.0\Persistance.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\obj\Debug\net6.0\Persistance.AssemblyInfoInputs.cache
-C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\obj\Debug\net6.0\Persistance.AssemblyInfo.cs
-C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\obj\Debug\net6.0\Persistance.csproj.CoreCompileInputs.cache
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\bin\Debug\net6.0\libzstd.dll
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\bin\Debug\net6.0\snappy32.dll
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\bin\Debug\net6.0\snappy64.dll
@@ -60,6 +55,11 @@ C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persi
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\bin\Debug\net6.0\Core.Persistance.pdb
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\bin\Debug\net6.0\Core.Security.pdb
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\bin\Debug\net6.0\Core.Shared.pdb
+C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\obj\Debug\net6.0\Persistance.csproj.AssemblyReference.cache
+C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\obj\Debug\net6.0\Persistance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\obj\Debug\net6.0\Persistance.AssemblyInfoInputs.cache
+C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\obj\Debug\net6.0\Persistance.AssemblyInfo.cs
+C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\obj\Debug\net6.0\Persistance.csproj.CoreCompileInputs.cache
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\obj\Debug\net6.0\Persistance.csproj.CopyComplete
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\obj\Debug\net6.0\Persistance.dll
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\Game\Persistance\obj\Debug\net6.0\refint\Persistance.dll
