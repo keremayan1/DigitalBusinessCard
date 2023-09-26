@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\UserInfo\\WebAPI\\wwwroot\\images\\bdddfe00-ee0c-4c60-8a0d-822733a4ae92.jpg",
+      "PackagePath": "staticwebassets\\images\\bdddfe00-ee0c-4c60-8a0d-822733a4ae92.jpg"
+    },
+    {
       "Id": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\UserInfo\\WebAPI\\wwwroot\\images\\default_image.png",
       "PackagePath": "staticwebassets\\images\\default_image.png"
     },

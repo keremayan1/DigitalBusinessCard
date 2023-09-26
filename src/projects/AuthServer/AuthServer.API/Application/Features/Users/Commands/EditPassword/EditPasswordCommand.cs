@@ -5,6 +5,7 @@ using AutoMapper;
 using Core.Security.Dtos;
 
 using Core.Security.Hashing;
+using Core.Shared.Services;
 using MediatR;
 
 namespace AuthServer.API.Application.Features.Users.Commands.EditPassword
@@ -21,19 +22,21 @@ namespace AuthServer.API.Application.Features.Users.Commands.EditPassword
             private IUserRepository _userRepository;
             private UserBusinessRules _userBusinessRules;
             private IMapper _mapper;
+            private ISharedIdentityService _sharedIdentityService;
 
-            public EditPasswordCommandHandler(IUserRepository userRepository, IMapper mapper, UserBusinessRules userBusinessRules)
+            public EditPasswordCommandHandler(IUserRepository userRepository, IMapper mapper, UserBusinessRules userBusinessRules, ISharedIdentityService sharedIdentityService)
             {
                 _userRepository = userRepository;
                 _mapper = mapper;
                 _userBusinessRules = userBusinessRules;
+                _sharedIdentityService = sharedIdentityService;
             }
 
             public async Task<UserForUpdatePasswordDto> Handle(EditPasswordCommand request, CancellationToken cancellationToken)
             {
                 byte[] passwordHash, passwordSalt;
 
-                var user = await _userRepository.GetAsync(x => x.Email == request.Email);
+                var user = await _userRepository.GetAsync(x => x.Id == Convert.ToInt32(_sharedIdentityService.GetUserId));
 
                 _userBusinessRules.CheckIfOldPasswordAndNewPasswordAreExists(request.OldPassword, request.NewPassword);
                 _userBusinessRules.CheckPasswordSame(request.NewPassword, request.NewPasswordVerify);

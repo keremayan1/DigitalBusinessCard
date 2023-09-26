@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pXxdYydOM60lXaGRqWLH+IKGXjtmBkQ6Wx6OKBqLFPQ=",
+  "Hash": "f9APaf80v6l3JFDkxFscccsB1vWQLvJc6kijYE661VU=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\UserInfo\\WebAPI\\wwwroot\\images\\bdddfe00-ee0c-4c60-8a0d-822733a4ae92.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\UserInfo\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "images/bdddfe00-ee0c-4c60-8a0d-822733a4ae92.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\bdddfe00-ee0c-4c60-8a0d-822733a4ae92.jpg"
+    },
     {
       "Identity": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\UserInfo\\WebAPI\\wwwroot\\images\\default_image.png",
       "SourceId": "WebAPI",

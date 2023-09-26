@@ -43,5 +43,14 @@ namespace AuthServer.API.Application.Features.Users.Rules
             }
             return result;
         }
+        public bool CheckIfOldEmailAndNewEmailAreExists(string oldEmail, string newEmail)
+        {
+            var result = oldEmail == newEmail;
+            if (result)
+            {
+                throw new BusinessException("Old email and new email  doesn't exists");
+            }
+            return result;
+        }
     }
 }
