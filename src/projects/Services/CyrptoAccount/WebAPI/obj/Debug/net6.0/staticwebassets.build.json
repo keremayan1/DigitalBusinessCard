@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GdLXpAX/EfTD4+/gFAMawt42mfkx3A/+o7kyw+ovzUQ=",
+  "Hash": "2pR634DtprXJXQUF1El4eKQF+vju88gb5Y+U9i2TCCQ=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WebAPI\\wwwroot",
       "Source": "WebAPI",
-      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\",
+      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\images\\2d279cf3-cfea-44db-936c-ba4574c632af.png",
+      "Identity": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\images\\2d279cf3-cfea-44db-936c-ba4574c632af.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\",
+      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "images/2d279cf3-cfea-44db-936c-ba4574c632af.png",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\images\\2d279cf3-cfea-44db-936c-ba4574c632af.png"
     },
     {
-      "Identity": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\images\\49df48d0-ad31-4d29-a923-93c55cf8368e.png",
+      "Identity": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\images\\49df48d0-ad31-4d29-a923-93c55cf8368e.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\",
+      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "images/49df48d0-ad31-4d29-a923-93c55cf8368e.png",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\images\\49df48d0-ad31-4d29-a923-93c55cf8368e.png"
     },
     {
-      "Identity": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\images\\b02cc3b4-7b79-4d4a-b668-cee68dfb4105.png",
+      "Identity": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\images\\b02cc3b4-7b79-4d4a-b668-cee68dfb4105.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\",
+      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "images/b02cc3b4-7b79-4d4a-b668-cee68dfb4105.png",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\images\\b02cc3b4-7b79-4d4a-b668-cee68dfb4105.png"
     },
     {
-      "Identity": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\images\\bb3b3ed0-6f04-416e-ae06-734fc9abaa81.png",
+      "Identity": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\images\\bb3b3ed0-6f04-416e-ae06-734fc9abaa81.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\",
+      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "images/bb3b3ed0-6f04-416e-ae06-734fc9abaa81.png",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bb3b3ed0-6f04-416e-ae06-734fc9abaa81.png"
     },
     {
-      "Identity": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\images\\da3179a1-0512-4f71-b1f2-b74332cf247c.png",
+      "Identity": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\images\\da3179a1-0512-4f71-b1f2-b74332cf247c.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\",
+      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "images/da3179a1-0512-4f71-b1f2-b74332cf247c.png",
       "AssetKind": "All",

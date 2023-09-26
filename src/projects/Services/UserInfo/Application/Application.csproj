@@ -21,4 +21,8 @@
 	  <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="2.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Images\Queries\" />
+  </ItemGroup>
+
 </Project>

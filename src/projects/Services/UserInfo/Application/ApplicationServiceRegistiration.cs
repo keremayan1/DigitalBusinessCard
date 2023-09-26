@@ -1,4 +1,5 @@
 ﻿using Application.Features.Biographies.Rules;
+using Application.Features.Images.Rules;
 using Core.Application.Pipelines.Authorization;
 using Core.Application.Pipelines.Validation;
 using FluentValidation;
@@ -20,6 +21,7 @@ namespace Application
             services.AddValidatorsFromAssembly(assembly);
 
             services.AddScoped<BiographyBusinessRules>();
+            services.AddScoped<UserImageBusinessRules>();
 
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));

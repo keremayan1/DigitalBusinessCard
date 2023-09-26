@@ -16,6 +16,7 @@ namespace Persistance
         {
             services.AddDbContext<SQLContext>();
             services.AddScoped<IUserBiographyRepository, UserBiographyRepository>();
+            services.AddScoped<IUserImageRepository, UserImageRepository>();
             return services;
         }
     }

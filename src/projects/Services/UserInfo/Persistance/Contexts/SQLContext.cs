@@ -9,6 +9,7 @@ namespace Persistance.Contexts
     {
         public IConfiguration Configuration { get; set; }
         public DbSet<UserBiography> UserBiographies { get; set; }
+        public DbSet<UserImage> UserImages { get; set; }
         public SQLContext(DbContextOptions dbContextOptions, IConfiguration configuration) : base(dbContextOptions)
         {
             Configuration = configuration;

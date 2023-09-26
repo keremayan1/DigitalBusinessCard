@@ -1,19 +1,11 @@
 {
   "Version": 1,
-  "Hash": "lcE3nnqKsoFyFjHIGIKJ25UlewOnsYgw0lI6y3YUq1A=",
+  "Hash": "7/8N/7vR8Gil4oF52j1JyaDaDh/w/bwrwTANJiMV94U=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [
-    {
-      "Name": "WebAPI\\wwwroot",
-      "Source": "WebAPI",
-      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\WebAPI\\wwwroot\\",
-      "BasePath": "_content/WebAPI",
-      "Pattern": "**"
-    }
-  ],
+  "DiscoveryPatterns": [],
   "Assets": []
 }

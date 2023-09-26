@@ -22,3 +22,15 @@ C:\Users\kerem\source\repos\DigitalBusinessCard\src\corePackages\Core.CrossCutti
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\corePackages\Core.CrossCuttingConcerns\obj\Debug\net6.0\refint\Core.CrossCuttingConcerns.dll
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\corePackages\Core.CrossCuttingConcerns\obj\Debug\net6.0\Core.CrossCuttingConcerns.pdb
 C:\Users\kerem\source\repos\DigitalBusinessCard\src\corePackages\Core.CrossCuttingConcerns\obj\Debug\net6.0\ref\Core.CrossCuttingConcerns.dll
+D:\kerem\codes\backend\DigitalBusinessCard\src\corePackages\Core.CrossCuttingConcerns\bin\Debug\net6.0\Core.CrossCuttingConcerns.deps.json
+D:\kerem\codes\backend\DigitalBusinessCard\src\corePackages\Core.CrossCuttingConcerns\bin\Debug\net6.0\Core.CrossCuttingConcerns.dll
+D:\kerem\codes\backend\DigitalBusinessCard\src\corePackages\Core.CrossCuttingConcerns\bin\Debug\net6.0\Core.CrossCuttingConcerns.pdb
+D:\kerem\codes\backend\DigitalBusinessCard\src\corePackages\Core.CrossCuttingConcerns\obj\Debug\net6.0\Core.CrossCuttingConcerns.csproj.AssemblyReference.cache
+D:\kerem\codes\backend\DigitalBusinessCard\src\corePackages\Core.CrossCuttingConcerns\obj\Debug\net6.0\Core.CrossCuttingConcerns.GeneratedMSBuildEditorConfig.editorconfig
+D:\kerem\codes\backend\DigitalBusinessCard\src\corePackages\Core.CrossCuttingConcerns\obj\Debug\net6.0\Core.CrossCuttingConcerns.AssemblyInfoInputs.cache
+D:\kerem\codes\backend\DigitalBusinessCard\src\corePackages\Core.CrossCuttingConcerns\obj\Debug\net6.0\Core.CrossCuttingConcerns.AssemblyInfo.cs
+D:\kerem\codes\backend\DigitalBusinessCard\src\corePackages\Core.CrossCuttingConcerns\obj\Debug\net6.0\Core.CrossCuttingConcerns.csproj.CoreCompileInputs.cache
+D:\kerem\codes\backend\DigitalBusinessCard\src\corePackages\Core.CrossCuttingConcerns\obj\Debug\net6.0\Core.CrossCuttingConcerns.dll
+D:\kerem\codes\backend\DigitalBusinessCard\src\corePackages\Core.CrossCuttingConcerns\obj\Debug\net6.0\refint\Core.CrossCuttingConcerns.dll
+D:\kerem\codes\backend\DigitalBusinessCard\src\corePackages\Core.CrossCuttingConcerns\obj\Debug\net6.0\Core.CrossCuttingConcerns.pdb
+D:\kerem\codes\backend\DigitalBusinessCard\src\corePackages\Core.CrossCuttingConcerns\obj\Debug\net6.0\ref\Core.CrossCuttingConcerns.dll
