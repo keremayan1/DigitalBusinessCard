@@ -10,6 +10,11 @@ namespace Persistance.Contexts
         public IConfiguration Configuration { get; set; }
         public DbSet<UserBiography> UserBiographies { get; set; }
         public DbSet<UserImage> UserImages { get; set; }
+        public DbSet<UserTelephoneNumber> UserTelephoneNumbers { get; set; }
+        public DbSet<UserTelephoneType> UserTelephoneTypes { get; set; }
+        public DbSet<UserTelephoneCountry> UserTelephoneCountries { get; set; }
+
+
         public SQLContext(DbContextOptions dbContextOptions, IConfiguration configuration) : base(dbContextOptions)
         {
             Configuration = configuration;

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "43zhu/+PCuC4gHlhFmALRW0TqR5iifr4v9H93mDoKbg=",
+  "Hash": "di6V0iovnNIu2p290DYnpupkm6/xcZW9X2RjXUjVnMQ=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WebAPI\\wwwroot",
       "Source": "WebAPI",
-      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\images\\02530157-94df-4c00-bd4c-926574dcc925.png",
+      "Identity": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\images\\02530157-94df-4c00-bd4c-926574dcc925.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "images/02530157-94df-4c00-bd4c-926574dcc925.png",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\images\\02530157-94df-4c00-bd4c-926574dcc925.png"
     },
     {
-      "Identity": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\images\\4697f824-c428-4650-bcd6-cc73ab568cb2.webp",
+      "Identity": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\images\\4697f824-c428-4650-bcd6-cc73ab568cb2.webp",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "images/4697f824-c428-4650-bcd6-cc73ab568cb2.webp",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\images\\4697f824-c428-4650-bcd6-cc73ab568cb2.webp"
     },
     {
-      "Identity": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\images\\47338450-bdda-41dd-9bd6-dcfe4bee5ca2.png",
+      "Identity": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\images\\47338450-bdda-41dd-9bd6-dcfe4bee5ca2.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "images/47338450-bdda-41dd-9bd6-dcfe4bee5ca2.png",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\images\\47338450-bdda-41dd-9bd6-dcfe4bee5ca2.png"
     },
     {
-      "Identity": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\images\\7edf6269-8367-4af4-8c3c-2777d8f68b85.png",
+      "Identity": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\images\\7edf6269-8367-4af4-8c3c-2777d8f68b85.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "images/7edf6269-8367-4af4-8c3c-2777d8f68b85.png",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\images\\7edf6269-8367-4af4-8c3c-2777d8f68b85.png"
     },
     {
-      "Identity": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\images\\bc812c84-c973-4573-bd57-8893b9a209b5.png",
+      "Identity": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\images\\bc812c84-c973-4573-bd57-8893b9a209b5.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Company\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "images/bc812c84-c973-4573-bd57-8893b9a209b5.png",
       "AssetKind": "All",

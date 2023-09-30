@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "f9APaf80v6l3JFDkxFscccsB1vWQLvJc6kijYE661VU=",
+  "Hash": "HQXkLYyZ0ESZ8F1NwM3OCaLrdyQc4iUqeY4B7KSXvLQ=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WebAPI\\wwwroot",
       "Source": "WebAPI",
-      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\UserInfo\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\UserInfo\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\UserInfo\\WebAPI\\wwwroot\\images\\bdddfe00-ee0c-4c60-8a0d-822733a4ae92.jpg",
+      "Identity": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\UserInfo\\WebAPI\\wwwroot\\images\\bdddfe00-ee0c-4c60-8a0d-822733a4ae92.jpg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\UserInfo\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\UserInfo\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "images/bdddfe00-ee0c-4c60-8a0d-822733a4ae92.jpg",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bdddfe00-ee0c-4c60-8a0d-822733a4ae92.jpg"
     },
     {
-      "Identity": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\UserInfo\\WebAPI\\wwwroot\\images\\default_image.png",
+      "Identity": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\UserInfo\\WebAPI\\wwwroot\\images\\default_image.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\UserInfo\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\UserInfo\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "images/default_image.png",
       "AssetKind": "All",

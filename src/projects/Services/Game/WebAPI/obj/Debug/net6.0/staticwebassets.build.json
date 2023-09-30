@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1ZwJLvYpdonI4nR1FPBrHJ7Xv0pcjXlX54ITvv0TNEw=",
+  "Hash": "EIaoQVCWNH3ZBQVipEI7MWnIIt3OvGq8rDvzhkUhghw=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WebAPI\\wwwroot",
       "Source": "WebAPI",
-      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\images\\982f9f0c-2960-4c33-b5bc-3b0e0e73fa63.png",
+      "Identity": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\images\\982f9f0c-2960-4c33-b5bc-3b0e0e73fa63.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\Game\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "images/982f9f0c-2960-4c33-b5bc-3b0e0e73fa63.png",
       "AssetKind": "All",

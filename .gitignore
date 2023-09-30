@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/DigitalBusinessCard/FileContentIndex/681ba289-9b46-4dcf-aa47-882db610f26a.vsidx
+*.vsidx
+*.vsidx

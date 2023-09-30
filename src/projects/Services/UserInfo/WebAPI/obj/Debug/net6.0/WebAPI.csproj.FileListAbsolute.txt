@@ -237,3 +237,4 @@ D:\kerem\codes\backend\DigitalBusinessCard\src\projects\Services\UserInfo\WebAPI
 D:\kerem\codes\backend\DigitalBusinessCard\src\projects\Services\UserInfo\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 D:\kerem\codes\backend\DigitalBusinessCard\src\projects\Services\UserInfo\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
 D:\kerem\codes\backend\DigitalBusinessCard\src\projects\Services\UserInfo\WebAPI\bin\Debug\net6.0\WebAPI.staticwebassets.runtime.json
+C:\Users\kerem\source\repos\DigitalBusinessCard\src\projects\Services\UserInfo\WebAPI\bin\Debug\net6.0\WebAPI.staticwebassets.runtime.json

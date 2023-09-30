@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "N6+gy5zPjMUTZB358Di32zuGMj0QIBtS77cR2taLAR0=",
+  "Hash": "yiMlYC8A50NnEVT0W0gKbRA7SFq8NdjL9cO8jA7oGuA=",
   "Source": "IBANAccount.API",
   "BasePath": "_content/IBANAccount.API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "IBANAccount.API\\wwwroot",
       "Source": "IBANAccount.API",
-      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\IBANAccount\\IBANAccount.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\IBANAccount\\IBANAccount.API\\wwwroot\\",
       "BasePath": "_content/IBANAccount.API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\IBANAccount\\IBANAccount.API\\wwwroot\\images\\d2b13f8c-404c-41f1-a2f2-7e904644eaa1.png",
+      "Identity": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\IBANAccount\\IBANAccount.API\\wwwroot\\images\\d2b13f8c-404c-41f1-a2f2-7e904644eaa1.png",
       "SourceId": "IBANAccount.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\IBANAccount\\IBANAccount.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\IBANAccount\\IBANAccount.API\\wwwroot\\",
       "BasePath": "_content/IBANAccount.API",
       "RelativePath": "images/d2b13f8c-404c-41f1-a2f2-7e904644eaa1.png",
       "AssetKind": "All",
