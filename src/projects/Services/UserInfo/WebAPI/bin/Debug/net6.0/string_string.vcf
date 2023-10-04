@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+
+N:string;string;
+
+FN:string
+ORG:string
+TITLE:şşşş
+TEL;TYPE=string,VOICE:string
+ADR;TYPE=string:;;string
+EMAIL:string
+END:VCARD

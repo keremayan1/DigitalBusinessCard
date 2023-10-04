@@ -1,43 +1,46 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\WebAPI.csproj": {}
+    "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Application\\Core.Application.csproj": {
+    "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Application\\Core.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Application\\Core.Application.csproj",
+        "projectUniqueName": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Application\\Core.Application.csproj",
         "projectName": "Core.Application",
-        "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Application\\Core.Application.csproj",
-        "packagesPath": "C:\\Users\\kerem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Application\\obj\\",
+        "projectPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Application\\Core.Application.csproj",
+        "packagesPath": "C:\\Users\\Destek\\.nuget\\packages\\",
+        "outputPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\kerem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Destek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "D:\\devexpress\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj": {
-                "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj"
+              "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj": {
+                "projectPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj"
               },
-              "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Security\\Core.Security.csproj": {
-                "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Security\\Core.Security.csproj"
+              "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Security\\Core.Security.csproj": {
+                "projectPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Security\\Core.Security.csproj"
               }
             }
           }
@@ -89,33 +92,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj": {
+    "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj",
+        "projectUniqueName": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj",
         "projectName": "Core.CrossCuttingConcerns",
-        "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj",
-        "packagesPath": "C:\\Users\\kerem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.CrossCuttingConcerns\\obj\\",
+        "projectPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.CrossCuttingConcerns\\Core.CrossCuttingConcerns.csproj",
+        "packagesPath": "C:\\Users\\Destek\\.nuget\\packages\\",
+        "outputPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.CrossCuttingConcerns\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\kerem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Destek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "D:\\devexpress\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -171,33 +177,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Persistance\\Core.Persistance.csproj": {
+    "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Persistance\\Core.Persistance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Persistance\\Core.Persistance.csproj",
+        "projectUniqueName": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Persistance\\Core.Persistance.csproj",
         "projectName": "Core.Persistance",
-        "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Persistance\\Core.Persistance.csproj",
-        "packagesPath": "C:\\Users\\kerem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Persistance\\obj\\",
+        "projectPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Persistance\\Core.Persistance.csproj",
+        "packagesPath": "C:\\Users\\Destek\\.nuget\\packages\\",
+        "outputPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Persistance\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\kerem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Destek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "D:\\devexpress\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -269,41 +278,44 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Security\\Core.Security.csproj": {
+    "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Security\\Core.Security.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Security\\Core.Security.csproj",
+        "projectUniqueName": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Security\\Core.Security.csproj",
         "projectName": "Core.Security",
-        "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Security\\Core.Security.csproj",
-        "packagesPath": "C:\\Users\\kerem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Security\\obj\\",
+        "projectPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Security\\Core.Security.csproj",
+        "packagesPath": "C:\\Users\\Destek\\.nuget\\packages\\",
+        "outputPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Security\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\kerem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Destek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "D:\\devexpress\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Persistance\\Core.Persistance.csproj": {
-                "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Persistance\\Core.Persistance.csproj"
+              "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Persistance\\Core.Persistance.csproj": {
+                "projectPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Persistance\\Core.Persistance.csproj"
               }
             }
           }
@@ -363,33 +375,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Shared\\Core.Shared.csproj": {
+    "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Shared\\Core.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Shared\\Core.Shared.csproj",
+        "projectUniqueName": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Shared\\Core.Shared.csproj",
         "projectName": "Core.Shared",
-        "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Shared\\Core.Shared.csproj",
-        "packagesPath": "C:\\Users\\kerem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Shared\\obj\\",
+        "projectPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Shared\\Core.Shared.csproj",
+        "packagesPath": "C:\\Users\\Destek\\.nuget\\packages\\",
+        "outputPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\kerem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Destek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "D:\\devexpress\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -441,48 +456,50 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\WebAPI.csproj": {
+    "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\WebAPI.csproj",
-        "packagesPath": "C:\\Users\\kerem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\obj\\",
+        "projectPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\WebAPI.csproj",
+        "packagesPath": "C:\\Users\\Destek\\.nuget\\packages\\",
+        "outputPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\CyrptoAccount\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\kerem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Destek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "D:\\devexpress\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Application\\Core.Application.csproj": {
-                "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Application\\Core.Application.csproj"
+              "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Application\\Core.Application.csproj": {
+                "projectPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Application\\Core.Application.csproj"
               },
-              "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Persistance\\Core.Persistance.csproj": {
-                "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Persistance\\Core.Persistance.csproj"
+              "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Persistance\\Core.Persistance.csproj": {
+                "projectPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Persistance\\Core.Persistance.csproj"
               },
-              "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Shared\\Core.Shared.csproj": {
-                "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\corePackages\\Core.Shared\\Core.Shared.csproj"
+              "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Shared\\Core.Shared.csproj": {
+                "projectPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\corePackages\\Core.Shared\\Core.Shared.csproj"
               }
             }
           }
@@ -549,7 +566,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

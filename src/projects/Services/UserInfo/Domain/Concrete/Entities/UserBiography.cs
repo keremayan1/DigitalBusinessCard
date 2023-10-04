@@ -19,4 +19,5 @@ namespace Domain.Concrete.Entities
             BiographyDescription = biographyDescription;
         }
     }
+    
 }

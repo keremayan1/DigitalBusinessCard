@@ -1,0 +1,25 @@
+BEGIN:VCARD
+VERSION:3.0
+
+N:Ayan;Kerem;
+
+FN:Kerem Ayan
+ORG:E-Yaz Yazılım
+TITLE:Yazılım Mühendisi
+TEL;TYPE=cell,,VOICE:05315249820
+
+TEL;TYPE=work,,VOICE:05458670333
+
+ADR;TYPE=work,PREF:;;Batıkent, Gündüz Ökçün Blv. No:6/A, 26000 Tepebaşı/Eskişehir
+
+ADR;TYPE=work,PREF:;;Batıkent, Gündüz Ökçün Blv. No:6/A, 26000 Tepebaşı/Eskişehir
+
+ADR;TYPE=home,PREF:;;Batıkent, Gündüz Ökçün Blv. No:6/A, 26000 Tepebaşı/Eskişehir
+
+EMAIL;TYPE=work,PREF:keremayan@e-yaz.com
+
+EMAIL;TYPE=home,PREF:keremayan002@gmail.com
+
+EMAIL;TYPE=home,PREF:kerobeybi26@gmail.com
+
+END:VCARD

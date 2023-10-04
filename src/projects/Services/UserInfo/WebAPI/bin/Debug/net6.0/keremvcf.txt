@@ -1,0 +1,46 @@
+{
+  "id": 0,
+  "firstName": "Kerem",
+  "lastName": "Ayan",
+  "formattedName": "Kerem Ayan",
+  "organization": "E-Yaz Yazılım",
+  "userVCardEmails": [
+    {
+      "email": "keremayan@e-yaz.com",
+      "type": "work"
+    },
+ {
+      "email": "keremayan002@gmail.com",
+      "type": "home"
+    },
+ {
+      "email": "kerobeybi26@gmail.com",
+      "type": "home"
+    }
+  ],
+  "title": "Yazılım Mühendisi",
+  "userVCardPhones": [
+    {
+      "phoneNumber": "05315249820",
+      "type": "cell"
+    },
+ {
+      "phoneNumber": "05458670333",
+      "type": "work"
+    }
+  ],
+  "userVCardAddresses": [
+    {
+      "type": "work",
+      "addressName": "Batıkent, Gündüz Ökçün Blv. No:6/A, 26000 Tepebaşı/Eskişehir"
+    },
+ {
+      "type": "work",
+      "addressName": "Batıkent, Gündüz Ökçün Blv. No:6/A, 26000 Tepebaşı/Eskişehir"
+    },
+ {
+      "type": "home",
+      "addressName": "Batıkent, Gündüz Ökçün Blv. No:6/A, 26000 Tepebaşı/Eskişehir"
+    }
+  ]
+}

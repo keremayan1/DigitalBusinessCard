@@ -6522,43 +6522,47 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kerem\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Destek\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\Persistance\\Persistance.csproj",
+      "projectUniqueName": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\Persistance\\Persistance.csproj",
       "projectName": "Persistance",
-      "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\Persistance\\Persistance.csproj",
-      "packagesPath": "C:\\Users\\kerem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\Persistance\\obj\\",
+      "projectPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\Persistance\\Persistance.csproj",
+      "packagesPath": "C:\\Users\\Destek\\.nuget\\packages\\",
+      "outputPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\Persistance\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\kerem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Destek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "D:\\devexpress\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\Application\\Application.csproj"
+            "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\Application\\Application.csproj": {
+              "projectPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\Application\\Application.csproj"
             },
-            "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\kerem\\source\\repos\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\Domain\\Domain.csproj"
+            "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\kerem\\codes\\backend\\DigitalBusinessCard\\src\\projects\\Services\\SocialMedia\\Domain\\Domain.csproj"
             }
           }
         }
@@ -6608,7 +6612,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
